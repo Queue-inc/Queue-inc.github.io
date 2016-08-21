@@ -65,11 +65,10 @@ body {
 				}
 	    }
 
-			hr{
+			hr {
 				margin: 0;
-				color: $color_1;
 				border: none;
-				height: 3px;
+				height: 1.5px;
 			}
 
 			.about_title_underline{
@@ -77,7 +76,7 @@ body {
 			}
 
 			.teams_title_underline{
-				width: 12vw;
+				width: 15vw;
 			}
 
 			.works_title_underline{
@@ -121,6 +120,18 @@ body {
 
 			#teams_logo{
 				width: 100%;
+				&:hover{
+					-webkit-transform: scale(1.2);
+			    -moz-transform: scale(1.2);
+			    -o-transform: scale(1.2);
+			    -ms-transform: scale(1.2);
+			    transform: scale(1.2);
+
+					-webkit-transition: all 0.5s ease;
+					-moz-transition: all 0.5s ease;
+					-o-transition: all 0.5s ease;
+					transition: all  0.5s ease;
+				}
 			}
 
 			.teams_page{
@@ -139,7 +150,7 @@ body {
 			.teams_detail_paragraph {
 				font-family: 'Ryumin', serif;
 				font-size: 14px !important;
-				line-height: 300%;
+				line-height: 200%;
 			}
 
 			.teams_section {
@@ -195,6 +206,7 @@ body {
 	}
 
 	#tmenu {
+		text-decoration: none;
 	  font-family: 'Futura-Oblique', sans-serif;
 	  font-size: calc(0.6vw + 0.6vh);
 		letter-spacing: 3px;
@@ -211,9 +223,25 @@ body {
 		width: 5vw;
 	  animation: fadeIn_menu 5s ease 0s 1 normal;
 	  -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
+
+		z-index: 2;
+
+		&:hover{
+			-webkit-transform: scale(1.1);
+			-moz-transform: scale(1.1);
+			-o-transform: scale(1.1);
+			-ms-transform: scale(1.1);
+			transform: scale(1.1);
+
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all  0.5s ease;
+		}
 	}
 
 	.amenu {
+		text-decoration: none;
 	  color: $color_1;
 	  font-size: 1.5em;
 		letter-spacing: 3px;
@@ -224,6 +252,7 @@ body {
 	  text-align: left;
 	  text-decoration: none;
 	  &:hover {
+			text-decoration: none;
 	    background-color: $color_1;
 	    color: $color_2;
 	  }
@@ -373,6 +402,7 @@ body {
 	}
 
 	#tmenu {
+		text-decoration: none;
 		display: none;
 		font-family: 'Futura-Oblique', sans-serif;
 		font-size: 4vw;
