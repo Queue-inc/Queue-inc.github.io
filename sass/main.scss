@@ -4,6 +4,7 @@ $color_1: black;
 $color_2: white;
 $border_1 : 12px solid $color_1;
 $border_2 : 20px solid $color_1;
+$h1_fontsize : calc(3vw+3vh);
 
 @font-face {
 	font-family: 'Futura';
@@ -52,7 +53,7 @@ body {
 	    h1{
 	      font-family: 'Futura-Oblique', sans-serif;
 				letter-spacing: 2px;
-	      font-size: calc(3vw+3vh);
+	      font-size: 2vw;
 
 				#queue{
 					font-family: 'Futura', sans-serif;
@@ -63,6 +64,22 @@ body {
 					font-style: italic;
 				}
 	    }
+
+			.about_title_underline{
+				margin: 0;
+				color: $color_1;
+				border: none;
+				height: 3px;
+				width: 12.5vw;
+			}
+
+			.teams_title_underline{
+				margin: 0;
+				color: $color_1;
+				border: none;
+				height: 3px;
+				width: 12vw;
+			}
 
 			h2{
 				font-family: 'Garamond', serif;
