@@ -40,155 +40,14 @@ body {
 }
 
 @media screen and (min-width: 960px)  {
-	.content_wrap {
-	  padding:5vh 6vw 0 12vw;
-	  position: relative;
-	  font-family: 'Ryumin', serif;
-	  .content {
-	    position: absolute;
-	    display: none;
-	    padding-right: 15vw;
-	    padding-left:  5vw;
 
-	    h1{
-	      font-family: 'Futura-Oblique', sans-serif;
-				letter-spacing: 2px;
-	      font-size: 2vw;
-
-				#queue{
-					font-family: 'Futura', sans-serif;
-				}
-
-				#others{
-					font-family: 'Garamond', serif;
-					font-style: italic;
-				}
-	    }
-
-			hr {
-				margin: 0;
-				border: none;
-				height: 1.5px;
-			}
-
-			.about_title_underline{
-				width: 12.5vw;
-			}
-
-			.teams_title_underline{
-				width: 15vw;
-			}
-
-			.works_title_underline{
-				width: 13vw;
-			}
-
-			.enqueue_title_underline{
-				width: 8vw;
-			}
-
-			.contact_title_underline{
-				width: 16vw;
-			}
-
-			h2{
-				font-family: 'Garamond', serif;
-				font-style: italic;
-				font-weight: 200;
-				font-size: 2vw;
-				text-align: center;
-				padding: 10vh 0;
-			}
-
-			h3{
-				font-family: 'Futura', 'Ryumin',  serif;
-				font-weight: 200;
-				font-size: 1.5vw;
-			}
-
-	    .about_paragraph_warp{
-				overflow: scroll;
-	      height: 70vh;
-	    }
-
-			#about_paragraph{
-				font-size: 18px !important;
-				line-height: 250%;
-				letter-spacing: 6px;
-				padding-top: 5vh;
-			}
-
-			#teams_logo{
-				width: 100%;
-
-				-moz-transition: -moz-transform 0.5s linear;
-		    -webkit-transition: -webkit-transform 0.5s linear;
-		    -o-transition: -o-transform 0.5s linear;
-		    -ms-transition: -ms-transform 0.5s linear;
-		    transition: transform 0.5s linear;
-
-				&:hover{
-					-webkit-transform: scale(1.2);
-			    -moz-transform: scale(1.2);
-			    -o-transform: scale(1.2);
-			    -ms-transform: scale(1.2);
-			    transform: scale(1.2);
-
-					-webkit-transition: all 0.5s ease;
-					-moz-transition: all 0.5s ease;
-					-o-transition: all 0.5s ease;
-					transition: all  0.5s ease;
-				}
-			}
-
-			.teams_page{
-				overflow-y: scroll;
-				overflow-x: hidden;
-				height: 70vh;
-				width: 60vw;
-			}
-
-			.teams_paragraph {
-				font-family: 'Ryumin', serif;
-				font-size: 18px !important;
-				line-height: 200%;
-				padding-top: 5vh;
-			}
-
-			.teams_detail_paragraph {
-				font-family: 'Ryumin', serif;
-				font-size: 14px !important;
-				line-height: 200%;
-			}
-
-			.teams_section {
-				padding-top: 2vh;
-			}
-
-			.teams_detail {
-				padding-top: 5vh;
-			}
-
-			#e-mail {
-				#email{
-					font-family: 'Garamond', sans-serif;
-					font-style: italic;
-					font-size: 20px;
-				}
-				font-family: 'Ryumin', sans-serif;
-				font-size: 18px;
-				padding-top: 10vh;
-			}
-	  }
-	}
 
 	#greeting {
-		font-size: calc(6vw + 4vh);
+		font-size: 8vw;
 		color: $color_1;
 	  position: absolute;
-	  bottom: -1vh;
-		padding-bottom: calc(0.05vw+0.2vh);
-	  right: 6vw;
+	  bottom: -4vw;
+	  right: 0;
 	  float: right;
 	  text-align: center;
 	  animation: fadeIn_menu 5s ease 0s 1 normal;
@@ -207,28 +66,12 @@ body {
 	  font-weight: 200;
 		position: relative;
 		top: 0;
-		-webkit-transition: all 1s ease;
-		-moz-transition: all 1s ease;
-		-o-transition: all 1s ease;
-		transition: all  1s ease;
-	}
-
-	#tmenu {
-		text-decoration: none;
-	  font-family: 'Futura-Oblique', sans-serif;
-	  font-size: calc(0.6vw + 0.6vh);
-		letter-spacing: 3px;
-	  float: left;
-	  position: fixed;
-	  margin: 10vh 0 0 -2vw;
-	  animation: fadeIn_menu 5s ease 0s 1 normal;
-	  -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
 	}
 
 	#top_logo_wrapper {
 		float: right;
 		position: relative;
-		margin: 10vh 8vw 0 0;
+		margin: -20px 60px 20px 0;
 		width: 5vw;
 		z-index: 2;
 		animation: fadeIn_menu 5s ease 0s 1 normal;
@@ -254,29 +97,6 @@ body {
 		}
 	}
 
-	.amenu {
-		text-decoration: none;
-	  color: $color_1;
-	  font-size: 1.5em;
-		letter-spacing: 3px;
-	  display: block;
-	  padding-left: 10vw;
-	  padding-right: 1vw;
-	  margin-top: 1vh;
-	  text-align: left;
-	  text-decoration: none;
-	  &:hover {
-			text-decoration: none;
-	    background-color: $color_1;
-	    color: $color_2;
-	  }
-	}
-
-	tr .selected{
-	  background-color: $color_1;
-	  color: $color_2;
-	}
-
 	#square {
 		z-index: 0;
 	  border: $border_2;
@@ -294,6 +114,190 @@ body {
 	  transition: all  1s ease;
 	  animation: fadeIn_square 4s ease 0s 1 normal;
 	  -webkit-animation: fadeIn_square 4s ease 0s 1 normal;
+
+		.content_wrap {
+		  padding:40px 6vw 0 12vw;
+		  position: relative;
+		  font-family: 'Ryumin', serif;
+
+		  .content {
+		    position: absolute;
+		    display: none;
+				margin-left: 80px;
+				margin-right: 140px;
+				width: auto;
+				overflow: hidden;
+
+		    h1{
+		      font-family: 'Futura-Oblique', sans-serif;
+					letter-spacing: 2px;
+		      font-size: 2vw;
+
+					#queue{
+						font-family: 'Futura', sans-serif;
+					}
+
+					#others{
+						font-family: 'Garamond', serif;
+						font-style: italic;
+					}
+		    }
+
+				hr {
+					margin: 0;
+					border: none;
+					height: 1.5px;
+				}
+
+				.about_title_underline{
+					width: 12.5vw;
+				}
+
+				.teams_title_underline{
+					width: 15vw;
+				}
+
+				.works_title_underline{
+					width: 13vw;
+				}
+
+				.enqueue_title_underline{
+					width: 8vw;
+				}
+
+				.contact_title_underline{
+					width: 16vw;
+				}
+
+				h2{
+					font-family: 'Garamond', serif;
+					font-style: italic;
+					font-weight: 200;
+					font-size: 2vw;
+					text-align: center;
+					padding: 10vh 0;
+				}
+
+				h3{
+					font-family: 'Futura', 'Ryumin',  serif;
+					font-weight: 200;
+					font-size: 1.5vw;
+				}
+
+		    .about_paragraph_warp{
+		      height: 70vh;
+		    }
+
+				#about_paragraph{
+					font-size: 18px !important;
+					line-height: 250%;
+					letter-spacing: 6px;
+					padding-top: 5vh;
+				}
+
+				#teams_logo{
+					width: 100%;
+
+					-moz-transition: -moz-transform 0.5s linear;
+			    -webkit-transition: -webkit-transform 0.5s linear;
+			    -o-transition: -o-transform 0.5s linear;
+			    -ms-transition: -ms-transform 0.5s linear;
+			    transition: transform 0.5s linear;
+
+					&:hover{
+						-webkit-transform: scale(1.2);
+				    -moz-transform: scale(1.2);
+				    -o-transform: scale(1.2);
+				    -ms-transform: scale(1.2);
+				    transform: scale(1.2);
+
+						-webkit-transition: all 0.5s ease;
+						-moz-transition: all 0.5s ease;
+						-o-transition: all 0.5s ease;
+						transition: all  0.5s ease;
+					}
+				}
+
+				.teams_page{
+					overflow-y: scroll;
+					overflow-x: hidden;
+					height: 70vh;
+					width: 105%;
+					padding-right: 5vw;
+				}
+
+				.teams_paragraph {
+					font-family: 'Ryumin', serif;
+					font-size: 18px !important;
+					line-height: 200%;
+					padding-top: 5vh;
+				}
+
+				.teams_detail_paragraph {
+					font-family: 'Ryumin', serif;
+					font-size: 14px !important;
+					line-height: 200%;
+				}
+
+				.teams_section {
+					padding-top: 2vh;
+				}
+
+				.teams_detail {
+					padding-top: 5vh;
+				}
+
+				#e-mail {
+					#email{
+						font-family: 'Garamond', sans-serif;
+						font-style: italic;
+						font-size: 20px;
+					}
+					font-family: 'Ryumin', sans-serif;
+					font-size: 18px;
+					padding-top: 10vh;
+				}
+		  }
+		}
+
+		#tmenu {
+			text-decoration: none;
+			font-family: 'Futura-Oblique', sans-serif;
+			font-size: 12px;
+			letter-spacing: 3px;
+			float: left;
+			position: fixed;
+			margin: 0 20px 0 -14vw;
+			animation: fadeIn_menu 5s ease 0s 1 normal;
+			-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
+		}
+
+		tr .selected{
+			background-color: $color_1;
+			color: $color_2;
+		}
+
+		.amenu_wrap{
+			padding-left: 60px;
+		}
+
+		.amenu {
+			text-decoration: none;
+			color: $color_1;
+			font-size: 1.5em;
+			letter-spacing: 3px;
+			display: block;
+			padding-left: 14vw;
+			padding-right: 1vw;
+			margin-top: 1vh;
+			text-align: left;
+			text-decoration: none;
+			&:hover {
+				text-decoration: none;
+				background-color: $color_1;
+				color: $color_2;
+			}
+		}
 	}
 
 	@keyframes fadeIn_square {
@@ -351,163 +355,5 @@ body {
 	  100% {
 	    opacity: 1;
 	  }
-	}
-}
-
-@media screen and (max-width: 959px) {
-	.content_wrap {
-		padding: 5vh 10vw 0 10vw;
-		//position: relative;
-		font-family: 'Ryumin', serif;
-		.content {
-			position: absolute;
-			display: none;
-			overflow: scroll;
-
-			h1{
-				font-family: 'Futura-Oblique', sans-serif;
-				letter-spacing: 2px;
-				font-size: calc(3vw+3vh);
-
-				#queue{
-					font-family: 'Futura', sans-serif;
-				}
-			}
-
-			.paragraph_warp{
-				height: 65vh;
-				padding-right: 5vw;
-			}
-
-			p {
-				font-size: 18px !important;
-				line-height: 300%;
-				letter-spacing: 6px;
-			}
-		}
-	}
-
-	#greeting {
-		font-size: 10vw;
-		position: absolute;
-		bottom: 4vh;
-		right: 6vw;
-		float: right;
-		text-align: center;
-		//animation: fadeIn_menu 5s ease 0s 1 normal;
-		//-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
-	}
-
-	#hello {
-		font-family: 'Garamond', serif;
-		font-style: italic;
-		position: relative;
-		top: 0;
-	}
-
-	#queue {
-		font-family: 'Futura', sans-serif;
-		font-weight: 200;
-		position: relative;
-		top: 0;
-		-webkit-transition: all 1s ease;
-		-moz-transition: all 1s ease;
-		-o-transition: all 1s ease;
-		transition: all  1s ease;
-	}
-
-	#tmenu {
-		text-decoration: none;
-		display: none;
-		font-family: 'Futura-Oblique', sans-serif;
-		font-size: 4vw;
-		letter-spacing: 3px;
-		float: left;
-		position: fixed;
-		margin: 10vh 0 0 -2vw;
-		//animation: fadeIn_menu 5s ease 0s 1 normal;
-		//-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
-	}
-
-	.amenu {
-		color: $color_1;
-		font-size: 1.5em;
-		letter-spacing: 3px;
-		display: block;
-		padding-left: 10vw;
-		padding-right: 1vw;
-		margin-top: 1vh;
-		text-align: left;
-		text-decoration: none;
-		&:hover {
-			background-color: $color_1;
-			color: $color_2;
-		}
-	}
-
-	tr .selected{
-		background-color: $color_1;
-		color: $color_2;
-	}
-
-	#square {
-	  border: $border_1;
-	  bottom: 0;
-	  left: 0;
-	  margin: auto;
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	  height: 90vh;
-	  width: 90vw;
-	  -webkit-transition: all 1s ease;
-	  -moz-transition: all 1s ease;
-	  -o-transition: all 1s ease;
-	  transition: all  1s ease;
-
-	  //animation: fadeIn_square 2s ease 0s 1 normal;
-	  //-webkit-animation: fadeIn_square 2s ease 0s 1 normal;
-	}
-
-	@keyframes fadeIn_square {
-	  0% {
-	    background-color: $color_1;
-	    height: calc(5vw + 5vh);
-	    width: calc(5vw + 5vh);
-	    opacity: 0;
-	    //transform: rotate(-720deg);
-	  }
-
-	  50% {
-	    background-color: $color_1;
-	    height: calc(4vw + 4vh);
-	    width: calc(4vw + 4vh);
-	    opacity: 1;
-	    transform: rotate(0deg);
-
-	  }
-
-	  100% {
-	    opacity: 1;
-	    border: $border_1;
-	    height: 90vh;
-	    width: 90vw;
-	    text-align: center;
-	    background-color: rgba(255,255,255,0);
-	  }
-	}
-
-	@keyframes fadeIn_menu {
-		0% {
-			opacity: 0;
-		}
-
-		80% {
-			opacity: 0;
-		}
-
-		100% {
-			opacity: 1;
-		}
 	}
 }

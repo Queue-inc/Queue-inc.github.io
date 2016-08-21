@@ -6,6 +6,7 @@
   </head>
   <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link href="node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
   <body>
     <div id="square">
       <div id="content_wrap" class="content_wrap">
@@ -28,7 +29,7 @@
             <h1><span id="others">Teams of </span><span id="queue">Queue</span></h1>
             <hr class="teams_title_underline" align="left" color="black"/>
             <p class="teams_paragraph">
-              それぞれの専門領域ごとに、日々メンバー同士で研鑽を積み、企業との共同開発や自主開発に取り組んでいきます。高い専門性を備えたメンバーがチームをリードし、技術の習得や企業との共同開発に取り組んでいます。
+              それぞれの専門領域ごとに、日々メンバー同士で研鑽を積み、企業との共同開発や自主開発を行っています。高い専門性を備えたメンバーがチームをリードし、技術の習得や企業との共同開発に取り組んでいます。
             </p>
 
             <div class="teams_detail">
@@ -103,29 +104,34 @@
           <div id="e-mail"><span id="email">e-mail</span> : info@queue-inc.com</div>
         </div>
       </div>
-    </div>
-    <div>
-      <table cellpadding="0" cellspacing="5" id="tmenu">
-        <tr><td id="about"><a href="#about" class="amenu">About</a></td></tr>
-        <tr><td id="teams"><a href="#teams" class="amenu">Teams</a></td></tr>
-        <tr><td id="enqueue"><a href="#enqueue" class="amenu">Enqueue</a></td></tr>
-        <tr><td id="contact"><a href="#contact" class="amenu">Contact</a></td></tr>
-      </table>
-    </div>
-    <div id="greeting">
-      <span id="hello">
-        Hello, we are
-      </span>
-      <span id="queue">
-        Queue.
-      </span>
-    </div>
-    <div id="top_logo_wrapper">
-      <a href="#">
-        <img id="top_logo" src="images/logo/icon2_snsicon.png">
-      </a>
+
+      <div>
+        <table cellpadding="0" cellspacing="5" id="tmenu">
+          <tr class="arow"><td id="about">    <div class="amenu_wrap">  <a href="#about" class="amenu">About</a>      </div> </td></tr>
+          <tr class="arow"><td id="teams">    <div class="amenu_wrap">  <a href="#teams" class="amenu">Teams</a>      </div> </td></tr>
+          <tr class="arow"><td id="enqueue">  <div class="amenu_wrap">  <a href="#enqueue" class="amenu">Enqueue</a>  </div> </td></tr>
+          <tr class="arow"><td id="contact">  <div class="amenu_wrap">  <a href="#contact" class="amenu">Contact</a>  </div> </td></tr>
+        </table>
+      </div>
+
+      <div id="greeting">
+        <span id="hello">
+          Hello, we are
+        </span>
+        <span id="queue">
+          Queue.
+        </span>
+      </div>
+
+      <div id="top_logo_wrapper">
+        <a href="#">
+          <img id="top_logo" src="images/logo/icon2_snsicon.png">
+        </a>
+      </div>
+
     </div>
   </body>
   <script type="text/javascript" src="node_modules/jquery/dist/jquery.min.js"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>
+  <script src="node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
 </html>
