@@ -57,6 +57,11 @@ body {
 				#queue{
 					font-family: 'Futura', sans-serif;
 				}
+
+				#others{
+					font-family: 'Garamond', serif;
+					font-style: italic;
+				}
 	    }
 
 			h2{
@@ -69,47 +74,63 @@ body {
 			}
 
 			h3{
-				font-family: 'Futura-Oblique', 'Ryumin',  sans-serif;
+				font-family: 'Futura', 'Ryumin',  serif;
 				font-weight: 200;
 				font-size: 1.5vw;
-				img{
-					height: 4vw;
-				}
 			}
 
 	    .about_paragraph_warp{
-				overflow: hidden;
-	      height: 70vh;
-	    }
-
-			#ai_logo{
-				width: 6vw;
-			}
-
-			.teams_paragraph_wrap{
 				overflow: scroll;
 	      height: 70vh;
-				width: 60vw;
 	    }
 
-			.teams_paragraph {
+			#about_paragraph{
+				font-size: 18px !important;
+				line-height: 250%;
+				letter-spacing: 6px;
+				padding-top: 5vh;
+			}
 
+			#teams_logo{
+				width: 100%;
+			}
+
+			.teams_page{
+				overflow: scroll;
+				height: 70vh;
+				width: 60vw;
+			}
+
+			.teams_paragraph {
+				font-family: 'Ryumin', serif;
+				font-size: 18px !important;
+				line-height: 200%;
+				padding-top: 5vh;
+			}
+
+			.teams_detail_paragraph {
+				font-family: 'Ryumin', serif;
+				font-size: 14px !important;
+				line-height: 300%;
+			}
+
+			.teams_section {
+				padding-top: 2vh;
+			}
+
+			.teams_detail {
+				padding-top: 5vh;
 			}
 
 			#e-mail {
 				padding-top: 20vh;
 			}
-
-	    p {
-	      font-size: 18px !important;
-	      line-height: 250%;
-	      letter-spacing: 6px;
-	    }
 	  }
 	}
 
 	#greeting {
 		font-size: calc(6vw + 4vh);
+		color: $color_1;
 	  position: absolute;
 	  bottom: -1vh;
 		padding-bottom: calc(0.05vw+0.2vh);
