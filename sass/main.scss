@@ -65,20 +65,31 @@ body {
 				}
 	    }
 
-			.about_title_underline{
+			hr{
 				margin: 0;
 				color: $color_1;
 				border: none;
 				height: 3px;
+			}
+
+			.about_title_underline{
 				width: 12.5vw;
 			}
 
 			.teams_title_underline{
-				margin: 0;
-				color: $color_1;
-				border: none;
-				height: 3px;
 				width: 12vw;
+			}
+
+			.works_title_underline{
+				width: 13vw;
+			}
+
+			.enqueue_title_underline{
+				width: 8vw;
+			}
+
+			.contact_title_underline{
+				width: 16vw;
 			}
 
 			h2{
@@ -140,7 +151,14 @@ body {
 			}
 
 			#e-mail {
-				padding-top: 20vh;
+				#email{
+					font-family: 'Garamond', sans-serif;
+					font-style: italic;
+					font-size: 20px;
+				}
+				font-family: 'Ryumin', sans-serif;
+				font-size: 18px;
+				padding-top: 10vh;
 			}
 	  }
 	}
