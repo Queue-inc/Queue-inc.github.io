@@ -68,10 +68,33 @@ body {
 				padding: 10vh 0;
 			}
 
+			h3{
+				font-family: 'Futura-Oblique', 'Ryumin',  sans-serif;
+				font-weight: 200;
+				font-size: 1.5vw;
+				img{
+					height: 4vw;
+				}
+			}
+
 	    .about_paragraph_warp{
 				overflow: hidden;
 	      height: 70vh;
 	    }
+
+			.teams_paragraph_wrap{
+				overflow: scroll;
+	      height: 70vh;
+				width: 60vw;
+	    }
+
+			.teams_paragraph {
+
+			}
+
+			#e-mail {
+				padding-top: 20vh;
+			}
 
 	    p {
 	      font-size: 18px !important;
