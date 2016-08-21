@@ -114,8 +114,13 @@ body {
   /* line 121, ../sass/main.scss */
   .content_wrap .content #teams_logo {
     width: 100%;
+    -moz-transition: -moz-transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -o-transition: -o-transform 0.5s linear;
+    -ms-transition: -ms-transform 0.5s linear;
+    transition: transform 0.5s linear;
   }
-  /* line 123, ../sass/main.scss */
+  /* line 130, ../sass/main.scss */
   .content_wrap .content #teams_logo:hover {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -127,47 +132,48 @@ body {
     -o-transition: all 0.5s ease;
     transition: all  0.5s ease;
   }
-  /* line 137, ../sass/main.scss */
+  /* line 144, ../sass/main.scss */
   .content_wrap .content .teams_page {
-    overflow: scroll;
+    overflow-y: scroll;
+    overflow-x: hidden;
     height: 70vh;
     width: 60vw;
   }
-  /* line 143, ../sass/main.scss */
+  /* line 151, ../sass/main.scss */
   .content_wrap .content .teams_paragraph {
     font-family: 'Ryumin', serif;
     font-size: 18px !important;
     line-height: 200%;
     padding-top: 5vh;
   }
-  /* line 150, ../sass/main.scss */
+  /* line 158, ../sass/main.scss */
   .content_wrap .content .teams_detail_paragraph {
     font-family: 'Ryumin', serif;
     font-size: 14px !important;
     line-height: 200%;
   }
-  /* line 156, ../sass/main.scss */
+  /* line 164, ../sass/main.scss */
   .content_wrap .content .teams_section {
     padding-top: 2vh;
   }
-  /* line 160, ../sass/main.scss */
+  /* line 168, ../sass/main.scss */
   .content_wrap .content .teams_detail {
     padding-top: 5vh;
   }
-  /* line 164, ../sass/main.scss */
+  /* line 172, ../sass/main.scss */
   .content_wrap .content #e-mail {
     font-family: 'Ryumin', sans-serif;
     font-size: 18px;
     padding-top: 10vh;
   }
-  /* line 165, ../sass/main.scss */
+  /* line 173, ../sass/main.scss */
   .content_wrap .content #e-mail #email {
     font-family: 'Garamond', sans-serif;
     font-style: italic;
     font-size: 20px;
   }
 
-  /* line 177, ../sass/main.scss */
+  /* line 185, ../sass/main.scss */
   #greeting {
     font-size: calc(6vw + 4vh);
     color: black;
@@ -181,7 +187,7 @@ body {
     -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
   }
 
-  /* line 190, ../sass/main.scss */
+  /* line 198, ../sass/main.scss */
   #hello {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -189,7 +195,7 @@ body {
     top: 0;
   }
 
-  /* line 197, ../sass/main.scss */
+  /* line 205, ../sass/main.scss */
   #queue {
     font-family: 'Futura', sans-serif;
     font-weight: 200;
@@ -201,7 +207,7 @@ body {
     transition: all  1s ease;
   }
 
-  /* line 208, ../sass/main.scss */
+  /* line 216, ../sass/main.scss */
   #tmenu {
     text-decoration: none;
     font-family: 'Futura-Oblique', sans-serif;
@@ -214,17 +220,25 @@ body {
     -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
   }
 
-  /* line 220, ../sass/main.scss */
-  #top_logo {
+  /* line 228, ../sass/main.scss */
+  #top_logo_wrapper {
     float: right;
+    position: relative;
     margin: 10vh 8vw 0 0;
     width: 5vw;
+    z-index: 2;
     animation: fadeIn_menu 5s ease 0s 1 normal;
     -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
+  }
+
+  /* line 238, ../sass/main.scss */
+  #top_logo {
+    width: 100%;
     z-index: 2;
   }
-  /* line 229, ../sass/main.scss */
+  /* line 242, ../sass/main.scss */
   #top_logo:hover {
+    z-index: 2;
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -o-transform: scale(1.1);
@@ -236,7 +250,7 @@ body {
     transition: all  0.5s ease;
   }
 
-  /* line 243, ../sass/main.scss */
+  /* line 257, ../sass/main.scss */
   .amenu {
     text-decoration: none;
     color: black;
@@ -249,21 +263,22 @@ body {
     text-align: left;
     text-decoration: none;
   }
-  /* line 254, ../sass/main.scss */
+  /* line 268, ../sass/main.scss */
   .amenu:hover {
     text-decoration: none;
     background-color: black;
     color: white;
   }
 
-  /* line 261, ../sass/main.scss */
+  /* line 275, ../sass/main.scss */
   tr .selected {
     background-color: black;
     color: white;
   }
 
-  /* line 266, ../sass/main.scss */
+  /* line 280, ../sass/main.scss */
   #square {
+    z-index: 0;
     border: 20px solid black;
     bottom: 0;
     left: 0;
@@ -313,11 +328,11 @@ body {
       background-color: rgba(255, 255, 255, 0);
     }
   }
-  /* line 319, ../sass/main.scss */
+  /* line 334, ../sass/main.scss */
   #square .title {
     font-size: 1em;
   }
-  /* line 321, ../sass/main.scss */
+  /* line 336, ../sass/main.scss */
   #square .title.select {
     font-size: 12em;
   }
@@ -335,40 +350,40 @@ body {
   }
 }
 @media screen and (max-width: 959px) {
-  /* line 343, ../sass/main.scss */
+  /* line 358, ../sass/main.scss */
   .content_wrap {
     padding: 5vh 10vw 0 10vw;
     font-family: 'Ryumin', serif;
   }
-  /* line 347, ../sass/main.scss */
+  /* line 362, ../sass/main.scss */
   .content_wrap .content {
     position: absolute;
     display: none;
     overflow: scroll;
   }
-  /* line 352, ../sass/main.scss */
+  /* line 367, ../sass/main.scss */
   .content_wrap .content h1 {
     font-family: 'Futura-Oblique', sans-serif;
     letter-spacing: 2px;
     font-size: calc(3vw+3vh);
   }
-  /* line 357, ../sass/main.scss */
+  /* line 372, ../sass/main.scss */
   .content_wrap .content h1 #queue {
     font-family: 'Futura', sans-serif;
   }
-  /* line 362, ../sass/main.scss */
+  /* line 377, ../sass/main.scss */
   .content_wrap .content .paragraph_warp {
     height: 65vh;
     padding-right: 5vw;
   }
-  /* line 367, ../sass/main.scss */
+  /* line 382, ../sass/main.scss */
   .content_wrap .content p {
     font-size: 18px !important;
     line-height: 300%;
     letter-spacing: 6px;
   }
 
-  /* line 375, ../sass/main.scss */
+  /* line 390, ../sass/main.scss */
   #greeting {
     font-size: 10vw;
     position: absolute;
@@ -378,7 +393,7 @@ body {
     text-align: center;
   }
 
-  /* line 386, ../sass/main.scss */
+  /* line 401, ../sass/main.scss */
   #hello {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -386,7 +401,7 @@ body {
     top: 0;
   }
 
-  /* line 393, ../sass/main.scss */
+  /* line 408, ../sass/main.scss */
   #queue {
     font-family: 'Futura', sans-serif;
     font-weight: 200;
@@ -398,7 +413,7 @@ body {
     transition: all  1s ease;
   }
 
-  /* line 404, ../sass/main.scss */
+  /* line 419, ../sass/main.scss */
   #tmenu {
     text-decoration: none;
     display: none;
@@ -410,7 +425,7 @@ body {
     margin: 10vh 0 0 -2vw;
   }
 
-  /* line 417, ../sass/main.scss */
+  /* line 432, ../sass/main.scss */
   .amenu {
     color: black;
     font-size: 1.5em;
@@ -422,19 +437,19 @@ body {
     text-align: left;
     text-decoration: none;
   }
-  /* line 427, ../sass/main.scss */
+  /* line 442, ../sass/main.scss */
   .amenu:hover {
     background-color: black;
     color: white;
   }
 
-  /* line 433, ../sass/main.scss */
+  /* line 448, ../sass/main.scss */
   tr .selected {
     background-color: black;
     color: white;
   }
 
-  /* line 438, ../sass/main.scss */
+  /* line 453, ../sass/main.scss */
   #square {
     border: 12px solid black;
     bottom: 0;

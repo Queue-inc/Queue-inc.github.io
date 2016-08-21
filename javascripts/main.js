@@ -20,4 +20,11 @@ $(function() {
     $('#content_wrap').find('.content').fadeOut(1000);
     $(content_id).fadeIn(1000);
   });
+
+  $('#top_logo').click(function(){
+    $('#content_wrap').find('.content').fadeOut(1000);
+    $('#greeting').fadeIn(1000);
+    $('#tmenu').find('a').removeClass(selectedClassStr);
+    $('#content_wrap').find('.content').removeClass(selectedClassStr);
+  });
 });
