@@ -388,6 +388,16 @@ body {
 }
 
 @media screen and (max-width: 959px) {
+	html {
+	  height: 100%;
+		overflow: hidden
+	}
+
+	body {
+		height: 100%;
+	  background-color: white;
+		margin: 0 0 0 0;
+	}
 	.content_wrap {
 		padding: 5vh 0 0 0;
 		//position: relative;
@@ -399,7 +409,7 @@ body {
 			overflow-x: hidden;
 			margin: 30px 5vw calc(10vh + 40px) 5vw;
 			height: 70vh;
-			font-size: 12px;
+			font-size: 10px;
 
 			h1{
 				font-family: 'Futura-Oblique', sans-serif;
