@@ -369,22 +369,40 @@ body {
 
 @media screen and (max-width: 959px) {
 	.content_wrap {
-		padding: 5vh 10vw 0 10vw;
+		padding: 5vh 5vw 0 5vw;
 		//position: relative;
 		font-family: 'Ryumin', serif;
 		.content {
 			position: absolute;
 			display: none;
-			overflow: scroll;
+			overflow-y: scroll;
+			margin-top: 30px;
+			margin-bottom: calc(10vh + 40px);
+			height: 70vh;
 
 			h1{
 				font-family: 'Futura-Oblique', sans-serif;
 				letter-spacing: 2px;
-				font-size: calc(3vw+3vh);
+				font-size: 8vw;;
 
 				#queue{
 					font-family: 'Futura', sans-serif;
 				}
+			}
+
+			h2{
+				font-family: 'Garamond', serif;
+				font-style: italic;
+				font-weight: 200;
+				font-size: 6vw;
+				text-align: center;
+				padding: 10vh 0;
+			}
+
+			h3{
+				font-family: 'Futura', 'Ryumin',  serif;
+				font-weight: 200;
+				font-size: 5vw;
 			}
 
 			.paragraph_warp{
@@ -400,6 +418,7 @@ body {
 		}
 	}
 
+
 	#top_logo_wrapper {
 		display: none;
 		float: right;
@@ -407,8 +426,6 @@ body {
 		position: relative;
 		width: 40px;
 		z-index: 2;
-		//animation: fadeIn_menu 5s ease 0s 1 normal;
-		//-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
 	}
 
 	#top_logo {
@@ -432,8 +449,8 @@ body {
 
 	#navToggle {
 	  position: absolute;
-	  left: 12vw;
-	  top: 16vw;
+	  left: 20px;
+	  top: -10px;
 	  width: 30px;
 	  height: 25px;
 	  cursor: pointer;
@@ -466,62 +483,65 @@ body {
 		position: fixed;
 		background: rgba(255, 255, 255, 0.7);
 		display: table;
-		font-size: 0;
-		line-height: 0;
-	}
 
-	#sp_menu {
-	  h1 a img {
-	    height: 40px;
-	    margin: 10px;
-	  }
-	  ul {
-	    font-size: 13px;
-	    line-height: 1;
-	    margin: 0 10px 10px 0;
-	    li {
-	      margin-left: 3px;
-	      display: inline-block;
-	      &::after {
-	        content: ' |';
-	      }
-	      &:last-child::after {
-	        content: '';
-	      }
-	      a {
-	        color: inherit;
-	      }
-	    }
-	  }
-	}
+		font-family: 'Futura-Oblique', serif;
 
-	#sp_menu {
+		ul {
+			padding: 0;
+			font-size: 20px;
+			line-height: 1;
+			text-align: center;
+			margin: 0 10px 10px 0;
+			li {
+				margin: auto;
+				display: inline-block;
+				&:hover{
+					background-color: $color_1;
+					color: $color_2;
+				}
+				&::after {
+					content: ' |';
+				}
+				&:last-child::after {
+					content: '';
+				}
+				a {
+					z-index: 2;
+					text-decoration: none;
+					color: inherit;
+				}
+			}
+		}
+
 	  nav {
-			display: table-cell;
 			text-align: right;
 			vertical-align: bottom;
 	    position: absolute;
-	    top: 100px !important;
+	    top: 40px !important;
 	    background: rgba(255, 255, 255, 1);
 			opacity: 0;
 	    width: 100%;
 	    padding: 0 10px;
 			width: 80vw;
-			margin: 0 10vw;
+			margin: 0 auto;
 	    -webkit-transition: .5s ease-in-out;
 	    -moz-transition: .5s ease-in-out;
 	    transition: .5s ease-in-out;
 	    text-align: left;
+
+			&.selected{
+				opacity: 1;
+			}
 	  }
+
 	  ul {
-	    margin: 0;
+	    margin: auto;
 	    li {
 	      display: block;
-	      margin: 0;
-	      border-bottom: dotted 1px #fff;
-	      line-height: 3;
+	      margin-top: 20px;
 	      a {
 	        display: block;
+					line-height: 200%;
 	      }
 	      &::after {
 	        content: '';
@@ -554,14 +574,61 @@ body {
 	  }
 	}
 
+	hr {
+		margin: 0;
+		border: none;
+		height: 1.5px;
+	}
+
+	.about_title_underline{
+		width: 12.5vw;
+	}
+
+	.teams_title_underline{
+		width: 15vw;
+	}
+
+	.works_title_underline{
+		width: 13vw;
+	}
+
+	.enqueue_title_underline{
+		width: 8vw;
+	}
+
+	.contact_title_underline{
+		width: 16vw;
+	}
+
+	#teams_logo{
+		width: 100%;
+
+		-moz-transition: -moz-transform 0.5s linear;
+		-webkit-transition: -webkit-transform 0.5s linear;
+		-o-transition: -o-transform 0.5s linear;
+		-ms-transition: -ms-transform 0.5s linear;
+		transition: transform 0.5s linear;
+
+		&:hover{
+			-webkit-transform: scale(1.2);
+			-moz-transform: scale(1.2);
+			-o-transform: scale(1.2);
+			-ms-transform: scale(1.2);
+			transform: scale(1.2);
+
+			-webkit-transition: all 0.5s ease;
+			-moz-transition: all 0.5s ease;
+			-o-transition: all 0.5s ease;
+			transition: all  0.5s ease;
+		}
+	}
+
 	#greeting {
 		font-size: 9.6vw;
 		position: absolute;
 		bottom: -5vw;
 		right: 0;
 		text-align: center;
-		//animation: fadeIn_menu 5s ease 0s 1 normal;
-		//-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
 	}
 
 	#hello {
