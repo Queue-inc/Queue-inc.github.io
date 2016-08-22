@@ -71,7 +71,7 @@ body {
 	#top_logo_wrapper {
 		float: right;
 		position: relative;
-		margin: -20px 60px 20px 0;
+		margin: -20px 20px 20px 0;
 		width: 5vw;
 		z-index: 2;
 		animation: fadeIn_menu 5s ease 0s 1 normal;
@@ -125,6 +125,8 @@ body {
 		    display: none;
 				margin-left: 80px;
 				margin-right: 140px;
+				height: 90vh;
+				padding-bottom: calc(10vh + 60px);
 				width: auto;
 				overflow: hidden;
 
@@ -221,7 +223,7 @@ body {
 				.teams_page{
 					overflow-y: scroll;
 					overflow-x: hidden;
-					height: 70vh;
+					height: 100%;
 					width: 105%;
 					padding-right: 5vw;
 				}
@@ -263,39 +265,37 @@ body {
 		#tmenu {
 			text-decoration: none;
 			font-family: 'Futura-Oblique', sans-serif;
-			font-size: 12px;
+			font-size: 18px;
 			letter-spacing: 3px;
 			float: left;
 			position: fixed;
 			margin: 0 20px 0 -14vw;
 			animation: fadeIn_menu 5s ease 0s 1 normal;
 			-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
-		}
 
-		tr .selected{
-			background-color: $color_1;
-			color: $color_2;
-		}
-
-		.amenu_wrap{
-			padding-left: 60px;
-		}
-
-		.amenu {
-			text-decoration: none;
-			color: $color_1;
-			font-size: 1.5em;
-			letter-spacing: 3px;
-			display: block;
-			padding-left: 14vw;
-			padding-right: 1vw;
-			margin-top: 1vh;
-			text-align: left;
-			text-decoration: none;
-			&:hover {
-				text-decoration: none;
+			tr .selected{
 				background-color: $color_1;
 				color: $color_2;
+			}
+
+			.amenu_wrap{
+				padding-left: 60px;
+			}
+
+			.amenu {
+				text-decoration: none;
+				color: $color_1;
+				display: block;
+				padding-left: 14vw;
+				padding-right: 1vw;
+				margin-top: 16px;;
+				text-align: left;
+				text-decoration: none;
+				&:hover {
+					text-decoration: none;
+					background-color: $color_1;
+					color: $color_2;
+				}
 			}
 		}
 	}
