@@ -396,6 +396,7 @@ body {
 			position: absolute;
 			display: none;
 			overflow-y: scroll;
+			overflow-x: hidden;
 			margin: 30px 5vw calc(10vh + 40px) 5vw;
 			height: 70vh;
 			font-size: 12px;
@@ -432,8 +433,8 @@ body {
 
 			p {
 				font-size: 18px !important;
-				line-height: 250%;
-				letter-spacing: 6px;
+				line-height: 200%;
+				letter-spacing: 3px;
 			}
 		}
 	}
