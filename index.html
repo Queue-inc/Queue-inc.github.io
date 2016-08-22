@@ -8,6 +8,33 @@
   <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
   <link href="node_modules/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" type="text/css" />
   <body>
+
+    <!-- Menu -->
+      <table cellpadding="0" cellspacing="5" id="tmenu">
+        <tr class="arow"><td id="about">    <div class="amenu_wrap">  <a href="#about" class="amenu">About</a>      </div> </td></tr>
+        <tr class="arow"><td id="teams">    <div class="amenu_wrap">  <a href="#teams" class="amenu">Teams</a>      </div> </td></tr>
+        <tr class="arow"><td id="enqueue">  <div class="amenu_wrap">  <a href="#enqueue" class="amenu">Enqueue</a>  </div> </td></tr>
+        <tr class="arow"><td id="contact">  <div class="amenu_wrap">  <a href="#contact" class="amenu">Contact</a>  </div> </td></tr>
+      </table>
+
+    <div id="sp_menu">
+      <div id="navToggle">
+        <div>
+         <span></span> <span></span> <span></span>
+        </div>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#about" class="amenu">About</a></li>
+          <li><a href="#teams" class="amenu">Teams</a></li>
+          <li><a href="#enqueue" class="amenu">Enqueue</a></li>
+          <li><a href="#contact" class="amenu">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- The Square = Contents -->
+
     <div id="square">
       <div id="content_wrap" class="content_wrap">
         <div id="content_about" class="content">
@@ -102,36 +129,6 @@
           <hr class="contact_title_underline" align="left" color="black"/>
           <div id="e-mail"><span id="email">e-mail</span> : info@queue-inc.com</div>
         </div>
-      </div>
-
-      <div id="pc_menu">
-        <table cellpadding="0" cellspacing="5" id="tmenu">
-          <tr class="arow"><td id="about">    <div class="amenu_wrap">  <a href="#about" class="amenu">About</a>      </div> </td></tr>
-          <tr class="arow"><td id="teams">    <div class="amenu_wrap">  <a href="#teams" class="amenu">Teams</a>      </div> </td></tr>
-          <tr class="arow"><td id="enqueue">  <div class="amenu_wrap">  <a href="#enqueue" class="amenu">Enqueue</a>  </div> </td></tr>
-          <tr class="arow"><td id="contact">  <div class="amenu_wrap">  <a href="#contact" class="amenu">Contact</a>  </div> </td></tr>
-        </table>
-      </div>
-
-      <div class="sp_menu">
-        <div id="mobile-head">
-          <div id="nav-toggle">
-            <div>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
-        </div>
-        <nav id="global-nav">
-          <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">PRODUCT</a></li>
-            <li><a href="#">WORKS</a></li>
-            <li><a href="#">COMPANY</a></li>
-            <li><a href="#">CONTACT</a></li>
-          </ul>
-        </nav>
       </div>
 
       <div id="greeting">

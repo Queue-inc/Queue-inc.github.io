@@ -42,4 +42,8 @@ $(function() {
     $('#content_wrap').find('.content').removeClass(selectedClassStr);
   });
 
+  $('#navToggle').click(function(){
+    $('#sp_menu').toggleClass('openNav');
+  });
+
 });
