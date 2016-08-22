@@ -1,19 +1,36 @@
 $(function() {
+  var agent = navigator.userAgent;
+
   var hash = location.hash.substr(1);
 
   var content_id = '#content_' + hash;
   var selectedClassStr = 'selected';
   $(content_id).addClass(selectedClassStr);
 
-  if(hash != ''){
-    $('#greeting').hide();
-    setTimeout(function(){
-      $(content_id).fadeIn(1000);
-      if(hash == 'about'){
-        $('#greeting').css('animation', 'none');
-        $('#greeting').fadeIn(1000);
-      }
-    },4000);
+  if(agent.search(/iPhone/) != -1 || agent.search(/iPad/) != -1 || agent.search(/iPod/) != -1 || agent.search(/Android/) != -1){
+    if(hash != ''){
+      $('#greeting').hide();
+      setTimeout(function(){
+        $(content_id).fadeIn(1000);
+        if(hash == 'about'){
+          $('#greeting').css('animation', 'none');
+          $('#greeting').fadeIn(1000);
+          $('#navToggle').css('animation', 'none');
+          $('#greeting').fadeIn(1000);
+        }
+      },2000);
+    }
+  }else{
+    if(hash != ''){
+      $('#greeting').hide();
+      setTimeout(function(){
+        $(content_id).fadeIn(1000);
+        if(hash == 'about'){
+          $('#greeting').css('animation', 'none');
+          $('#greeting').fadeIn(1000);
+        }
+      },4000);
+    }
   }
 
   $('#tmenu td').click(function(){

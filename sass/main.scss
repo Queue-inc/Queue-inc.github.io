@@ -369,16 +369,16 @@ body {
 
 @media screen and (max-width: 959px) {
 	.content_wrap {
-		padding: 5vh 5vw 0 5vw;
+		padding: 5vh 0 0 0;
 		//position: relative;
 		font-family: 'Ryumin', serif;
 		.content {
 			position: absolute;
 			display: none;
 			overflow-y: scroll;
-			margin-top: 30px;
-			margin-bottom: calc(10vh + 40px);
+			margin: 30px 5vw calc(10vh + 40px) 5vw;
 			height: 70vh;
+			font-size: 16px;
 
 			h1{
 				font-family: 'Futura-Oblique', sans-serif;
@@ -454,6 +454,10 @@ body {
 	  width: 30px;
 	  height: 25px;
 	  cursor: pointer;
+
+		animation: fadeIn_menu 3s ease 0s 1 normal;
+	  -webkit-animation: fadeIn_menu 3s ease 0s 1 normal;
+
 	  div {
 	    position: relative;
 	  }
@@ -519,6 +523,7 @@ body {
 	    position: absolute;
 	    top: 40px !important;
 	    background: rgba(255, 255, 255, 1);
+			visibility: hidden;
 			opacity: 0;
 	    width: 100%;
 	    padding: 0 10px;
@@ -531,6 +536,7 @@ body {
 
 			&.selected{
 				opacity: 1;
+				visibility: visible;
 			}
 	  }
 
@@ -581,27 +587,33 @@ body {
 	}
 
 	.about_title_underline{
-		width: 12.5vw;
+		width: 40vw;
 	}
 
 	.teams_title_underline{
-		width: 15vw;
+		width: 40vw;
 	}
 
 	.works_title_underline{
-		width: 13vw;
+		width: 40vw;
 	}
 
 	.enqueue_title_underline{
-		width: 8vw;
+		width: 40vw;
 	}
 
 	.contact_title_underline{
-		width: 16vw;
+		width: 40vw;
+	}
+
+	.teams_page{
+		margin: auto;
+		text-align: left;
 	}
 
 	#teams_logo{
-		width: 100%;
+		width: 80%;
+		margin: auto;
 
 		-moz-transition: -moz-transform 0.5s linear;
 		-webkit-transition: -webkit-transform 0.5s linear;
@@ -668,8 +680,8 @@ body {
 	  -o-transition: all 1s ease;
 	  transition: all  1s ease;
 
-	  //animation: fadeIn_square 2s ease 0s 1 normal;
-	  //-webkit-animation: fadeIn_square 2s ease 0s 1 normal;
+	  animation: fadeIn_square 2s ease 0s 1 normal;
+	  -webkit-animation: fadeIn_square 2s ease 0s 1 normal;
 	}
 
 	@keyframes fadeIn_square {
@@ -705,7 +717,7 @@ body {
 			opacity: 0;
 		}
 
-		80% {
+		70% {
 			opacity: 0;
 		}
 
