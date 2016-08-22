@@ -51,6 +51,15 @@ $(function() {
     $(content_id).fadeIn(1000);
   });
 
+  $('#link2contact').click(function(){
+    $('#tmenu').find('a').removeClass(selectedClassStr);
+    $('#content_wrap').find('.content').removeClass(selectedClassStr);
+    $('#tmenu').find('#contact').find('a').addClass(selectedClassStr);
+    $('#content_contact').addClass(selectedClassStr);
+    $('#content_wrap').find('.content').fadeOut(1000);
+    $('#content_contact').fadeIn(1000);
+  });
+
   $('#top_logo').click(function(){
     $('#greeting').css('animation', 'none');
     $('#greeting').fadeIn(2000);
@@ -63,6 +72,7 @@ $(function() {
     $('#sp_menu').toggleClass('openNav');
     $('#sp_menu').find('nav').toggleClass('selected');
   });
+
 
   $('.sp_menu_link').click(function(){
     if(this.id != 'about'){

@@ -168,7 +168,7 @@ body {
 					width: 13vw;
 				}
 
-				.enqueue_title_underline{
+				.enqueue_title_underline {
 					width: 8vw;
 				}
 
@@ -189,6 +189,13 @@ body {
 					font-family: 'Futura', 'Ryumin',  serif;
 					font-weight: 200;
 					font-size: 1.5vw;
+				}
+
+				.paragraph{
+					font-size: 16px !important;
+					line-height: 250%;
+					letter-spacing: 6px;
+					padding-top: 5vh;
 				}
 
 		    .about_paragraph_warp{
@@ -256,6 +263,19 @@ body {
 
 				.teams_detail {
 					padding-top: 5vh;
+				}
+
+				.enqueue_page{
+					overflow-y: scroll;
+					overflow-x: hidden;
+					height: 100%;
+					width: 105%;
+					padding-right: 5vw;
+				}
+
+
+				.enqueue_image{
+					width: 100%;
 				}
 
 				#e-mail {
@@ -412,7 +432,7 @@ body {
 
 			p {
 				font-size: 18px !important;
-				line-height: 300%;
+				line-height: 250%;
 				letter-spacing: 6px;
 			}
 		}
