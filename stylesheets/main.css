@@ -666,6 +666,20 @@ body {
   }
 
   /* line 658, ../sass/main.scss */
+  .enqueue_page {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 105%;
+    padding-right: 5vw;
+  }
+
+  /* line 667, ../sass/main.scss */
+  .enqueue_image {
+    width: 100%;
+  }
+
+  /* line 671, ../sass/main.scss */
   #greeting {
     font-size: 9.6vw;
     position: absolute;
@@ -674,7 +688,7 @@ body {
     text-align: center;
   }
 
-  /* line 666, ../sass/main.scss */
+  /* line 679, ../sass/main.scss */
   #hello {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -682,7 +696,7 @@ body {
     top: 0;
   }
 
-  /* line 673, ../sass/main.scss */
+  /* line 686, ../sass/main.scss */
   #queue {
     font-family: 'Futura', sans-serif;
     font-weight: 200;
@@ -694,12 +708,12 @@ body {
     transition: all  1s ease;
   }
 
-  /* line 684, ../sass/main.scss */
+  /* line 697, ../sass/main.scss */
   #tmenu {
     display: none;
   }
 
-  /* line 688, ../sass/main.scss */
+  /* line 701, ../sass/main.scss */
   #square {
     border: 12px solid black;
     bottom: 0;
