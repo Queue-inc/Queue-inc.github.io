@@ -13,16 +13,14 @@
 @font-face {
   font-family: 'Ryumin';
   src: url(../fonts/Ryumin/A-OTF-RyuminPro-Medium.otf) format("opentype");
-  src: url(../fonts/Ryumin/A-OTF-RyuminPro-Regular.otf) format("opentype");
-  src: url(../fonts/Ryumin/A-OTF-RyuminPro-Light.otf) format("opentype");
 }
-/* line 31, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 html {
   height: 100%;
   overflow: hidden;
 }
 
-/* line 36, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 body {
   height: 100%;
   background-color: white;
@@ -30,16 +28,16 @@ body {
 }
 
 @media screen and (min-width: 960px) {
-  /* line 43, ../sass/main.scss */
+  /* line 41, ../sass/main.scss */
   #sp_menu {
     display: none;
   }
-  /* line 45, ../sass/main.scss */
+  /* line 43, ../sass/main.scss */
   #sp_menu nav {
     display: none;
   }
 
-  /* line 50, ../sass/main.scss */
+  /* line 48, ../sass/main.scss */
   #greeting {
     font-size: 8vw;
     color: black;
@@ -52,7 +50,7 @@ body {
     -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
   }
 
-  /* line 62, ../sass/main.scss */
+  /* line 60, ../sass/main.scss */
   #hello {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -60,7 +58,7 @@ body {
     top: 0;
   }
 
-  /* line 69, ../sass/main.scss */
+  /* line 67, ../sass/main.scss */
   #queue {
     font-family: 'Futura', sans-serif;
     font-weight: 200;
@@ -68,7 +66,7 @@ body {
     top: 0;
   }
 
-  /* line 76, ../sass/main.scss */
+  /* line 74, ../sass/main.scss */
   #top_logo_wrapper {
     float: right;
     position: relative;
@@ -79,12 +77,12 @@ body {
     -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
   }
 
-  /* line 86, ../sass/main.scss */
+  /* line 84, ../sass/main.scss */
   #top_logo {
     width: 100%;
     z-index: 2;
   }
-  /* line 90, ../sass/main.scss */
+  /* line 88, ../sass/main.scss */
   #top_logo:hover {
     z-index: 2;
     -webkit-transform: scale(1.1);
@@ -98,7 +96,7 @@ body {
     transition: all  0.5s ease;
   }
 
-  /* line 105, ../sass/main.scss */
+  /* line 103, ../sass/main.scss */
   #square {
     z-index: 0;
     border: 20px solid black;
@@ -117,13 +115,13 @@ body {
     animation: fadeIn_square 4s ease 0s 1 normal;
     -webkit-animation: fadeIn_square 4s ease 0s 1 normal;
   }
-  /* line 123, ../sass/main.scss */
+  /* line 121, ../sass/main.scss */
   #square .content_wrap {
     padding: 40px 6vw 0 12vw;
     position: relative;
     font-family: 'Ryumin', serif;
   }
-  /* line 128, ../sass/main.scss */
+  /* line 126, ../sass/main.scss */
   #square .content_wrap .content {
     position: absolute;
     display: none;
@@ -134,48 +132,48 @@ body {
     width: auto;
     overflow: hidden;
   }
-  /* line 138, ../sass/main.scss */
+  /* line 136, ../sass/main.scss */
   #square .content_wrap .content h1 {
     font-family: 'Futura-Oblique', sans-serif;
     letter-spacing: 2px;
     font-size: 2vw;
   }
-  /* line 143, ../sass/main.scss */
+  /* line 141, ../sass/main.scss */
   #square .content_wrap .content h1 #queue {
     font-family: 'Futura', sans-serif;
   }
-  /* line 147, ../sass/main.scss */
+  /* line 145, ../sass/main.scss */
   #square .content_wrap .content h1 #others {
     font-family: 'Garamond', serif;
     font-style: italic;
   }
-  /* line 153, ../sass/main.scss */
+  /* line 151, ../sass/main.scss */
   #square .content_wrap .content hr {
     margin: 0;
     border: none;
     height: 1.5px;
   }
-  /* line 159, ../sass/main.scss */
+  /* line 157, ../sass/main.scss */
   #square .content_wrap .content .about_title_underline {
     width: 12.5vw;
   }
-  /* line 163, ../sass/main.scss */
+  /* line 161, ../sass/main.scss */
   #square .content_wrap .content .teams_title_underline {
     width: 15vw;
   }
-  /* line 167, ../sass/main.scss */
+  /* line 165, ../sass/main.scss */
   #square .content_wrap .content .works_title_underline {
     width: 13vw;
   }
-  /* line 171, ../sass/main.scss */
+  /* line 169, ../sass/main.scss */
   #square .content_wrap .content .enqueue_title_underline {
     width: 8vw;
   }
-  /* line 175, ../sass/main.scss */
+  /* line 173, ../sass/main.scss */
   #square .content_wrap .content .contact_title_underline {
     width: 16vw;
   }
-  /* line 179, ../sass/main.scss */
+  /* line 177, ../sass/main.scss */
   #square .content_wrap .content h2 {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -184,31 +182,31 @@ body {
     text-align: center;
     padding: 10vh 0;
   }
-  /* line 188, ../sass/main.scss */
+  /* line 186, ../sass/main.scss */
   #square .content_wrap .content h3 {
     font-family: 'Futura', 'Ryumin',  serif;
     font-weight: 200;
     font-size: 1.5vw;
   }
-  /* line 194, ../sass/main.scss */
+  /* line 192, ../sass/main.scss */
   #square .content_wrap .content .paragraph {
     font-size: 16px !important;
     line-height: 250%;
     letter-spacing: 6px;
     padding-top: 5vh;
   }
-  /* line 201, ../sass/main.scss */
+  /* line 199, ../sass/main.scss */
   #square .content_wrap .content .about_paragraph_warp {
     height: 70vh;
   }
-  /* line 205, ../sass/main.scss */
+  /* line 203, ../sass/main.scss */
   #square .content_wrap .content #about_paragraph {
     font-size: 18px !important;
     line-height: 250%;
     letter-spacing: 6px;
     padding-top: 5vh;
   }
-  /* line 212, ../sass/main.scss */
+  /* line 210, ../sass/main.scss */
   #square .content_wrap .content #teams_logo {
     width: 100%;
     -moz-transition: -moz-transform 0.5s linear;
@@ -217,7 +215,7 @@ body {
     -ms-transition: -ms-transform 0.5s linear;
     transition: transform 0.5s linear;
   }
-  /* line 221, ../sass/main.scss */
+  /* line 219, ../sass/main.scss */
   #square .content_wrap .content #teams_logo:hover {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -229,7 +227,7 @@ body {
     -o-transition: all 0.5s ease;
     transition: all  0.5s ease;
   }
-  /* line 235, ../sass/main.scss */
+  /* line 233, ../sass/main.scss */
   #square .content_wrap .content .teams_page {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -237,32 +235,32 @@ body {
     width: 105%;
     padding-right: 5vw;
   }
-  /* line 242, ../sass/main.scss */
+  /* line 240, ../sass/main.scss */
   #square .content_wrap .content .teams_page .teams_of {
     padding-right: 18px;
   }
-  /* line 247, ../sass/main.scss */
+  /* line 245, ../sass/main.scss */
   #square .content_wrap .content .teams_paragraph {
     font-family: 'Ryumin', serif;
     font-size: 18px !important;
     line-height: 200%;
     padding-top: 5vh;
   }
-  /* line 254, ../sass/main.scss */
+  /* line 252, ../sass/main.scss */
   #square .content_wrap .content .teams_detail_paragraph {
     font-family: 'Ryumin', serif;
     font-size: 14px !important;
     line-height: 200%;
   }
-  /* line 260, ../sass/main.scss */
+  /* line 258, ../sass/main.scss */
   #square .content_wrap .content .teams_section {
     padding-top: 2vh;
   }
-  /* line 264, ../sass/main.scss */
+  /* line 262, ../sass/main.scss */
   #square .content_wrap .content .teams_detail {
     padding-top: 5vh;
   }
-  /* line 268, ../sass/main.scss */
+  /* line 266, ../sass/main.scss */
   #square .content_wrap .content .enqueue_page {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -270,23 +268,23 @@ body {
     width: 105%;
     padding-right: 5vw;
   }
-  /* line 277, ../sass/main.scss */
+  /* line 275, ../sass/main.scss */
   #square .content_wrap .content .enqueue_image {
     width: 100%;
   }
-  /* line 281, ../sass/main.scss */
+  /* line 279, ../sass/main.scss */
   #square .content_wrap .content #e-mail {
     font-family: 'Ryumin', sans-serif;
     font-size: 18px;
     padding-top: 10vh;
   }
-  /* line 282, ../sass/main.scss */
+  /* line 280, ../sass/main.scss */
   #square .content_wrap .content #e-mail #email {
     font-family: 'Garamond', sans-serif;
     font-style: italic;
     font-size: 20px;
   }
-  /* line 294, ../sass/main.scss */
+  /* line 292, ../sass/main.scss */
   #square #tmenu {
     text-decoration: none;
     font-family: 'Futura-Oblique', sans-serif;
@@ -298,16 +296,16 @@ body {
     animation: fadeIn_menu 5s ease 0s 1 normal;
     -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
   }
-  /* line 305, ../sass/main.scss */
+  /* line 303, ../sass/main.scss */
   #square #tmenu tr .selected {
     background-color: black;
     color: white;
   }
-  /* line 310, ../sass/main.scss */
+  /* line 308, ../sass/main.scss */
   #square #tmenu .amenu_wrap {
     padding-left: 60px;
   }
-  /* line 314, ../sass/main.scss */
+  /* line 312, ../sass/main.scss */
   #square #tmenu .amenu {
     text-decoration: none;
     color: black;
@@ -318,7 +316,7 @@ body {
     text-align: left;
     text-decoration: none;
   }
-  /* line 323, ../sass/main.scss */
+  /* line 321, ../sass/main.scss */
   #square #tmenu .amenu:hover {
     text-decoration: none;
     background-color: black;
@@ -357,11 +355,11 @@ body {
       background-color: rgba(255, 255, 255, 0);
     }
   }
-  /* line 367, ../sass/main.scss */
+  /* line 365, ../sass/main.scss */
   #square .title {
     font-size: 1em;
   }
-  /* line 369, ../sass/main.scss */
+  /* line 367, ../sass/main.scss */
   #square .title.select {
     font-size: 12em;
   }
@@ -379,25 +377,25 @@ body {
   }
 }
 @media screen and (max-width: 959px) {
-  /* line 391, ../sass/main.scss */
+  /* line 389, ../sass/main.scss */
   html {
     height: 100%;
     overflow: hidden;
   }
 
-  /* line 396, ../sass/main.scss */
+  /* line 394, ../sass/main.scss */
   body {
     height: 100%;
     background-color: white;
     margin: 0 0 0 0;
   }
 
-  /* line 401, ../sass/main.scss */
+  /* line 399, ../sass/main.scss */
   .content_wrap {
     padding: 5vh 0 0 0;
     font-family: 'Ryumin', serif;
   }
-  /* line 405, ../sass/main.scss */
+  /* line 403, ../sass/main.scss */
   .content_wrap .content {
     position: absolute;
     display: none;
@@ -407,17 +405,17 @@ body {
     height: 68vh;
     font-size: 10px;
   }
-  /* line 414, ../sass/main.scss */
+  /* line 412, ../sass/main.scss */
   .content_wrap .content h1 {
     font-family: 'Futura-Oblique', sans-serif;
     letter-spacing: 2px;
     font-size: 7vw;
   }
-  /* line 419, ../sass/main.scss */
+  /* line 417, ../sass/main.scss */
   .content_wrap .content h1 #queue {
     font-family: 'Futura', sans-serif;
   }
-  /* line 424, ../sass/main.scss */
+  /* line 422, ../sass/main.scss */
   .content_wrap .content h2 {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -426,25 +424,25 @@ body {
     text-align: center;
     padding: 10vh 0;
   }
-  /* line 433, ../sass/main.scss */
+  /* line 431, ../sass/main.scss */
   .content_wrap .content h3 {
     font-family: 'Futura', 'Ryumin',  serif;
     font-weight: 200;
     font-size: 5vw;
   }
-  /* line 439, ../sass/main.scss */
+  /* line 437, ../sass/main.scss */
   .content_wrap .content .paragraph_warp {
     height: 65vh;
     padding-right: 5vw;
   }
-  /* line 444, ../sass/main.scss */
+  /* line 442, ../sass/main.scss */
   .content_wrap .content p {
     font-size: 18px !important;
     line-height: 200%;
     letter-spacing: 3px;
   }
 
-  /* line 453, ../sass/main.scss */
+  /* line 451, ../sass/main.scss */
   #top_logo_wrapper {
     display: none;
     float: right;
@@ -454,12 +452,12 @@ body {
     z-index: 2;
   }
 
-  /* line 462, ../sass/main.scss */
+  /* line 460, ../sass/main.scss */
   #top_logo {
     width: 100%;
     z-index: 2;
   }
-  /* line 466, ../sass/main.scss */
+  /* line 464, ../sass/main.scss */
   #top_logo:hover {
     z-index: 2;
     -webkit-transform: scale(1.1);
@@ -473,7 +471,7 @@ body {
     transition: all  0.5s ease;
   }
 
-  /* line 481, ../sass/main.scss */
+  /* line 479, ../sass/main.scss */
   #navToggle {
     position: absolute;
     left: 20px;
@@ -484,11 +482,11 @@ body {
     animation: fadeIn_menu 3s ease 0s 1 normal;
     -webkit-animation: fadeIn_menu 3s ease 0s 1 normal;
   }
-  /* line 492, ../sass/main.scss */
+  /* line 490, ../sass/main.scss */
   #navToggle div {
     position: relative;
   }
-  /* line 495, ../sass/main.scss */
+  /* line 493, ../sass/main.scss */
   #navToggle span {
     display: block;
     position: absolute;
@@ -498,20 +496,20 @@ body {
     -moz-transition: .35s ease-in-out;
     transition: .35s ease-in-out;
   }
-  /* line 503, ../sass/main.scss */
+  /* line 501, ../sass/main.scss */
   #navToggle span:nth-child(1) {
     top: 0;
   }
-  /* line 506, ../sass/main.scss */
+  /* line 504, ../sass/main.scss */
   #navToggle span:nth-child(2) {
     top: 11px;
   }
-  /* line 509, ../sass/main.scss */
+  /* line 507, ../sass/main.scss */
   #navToggle span:nth-child(3) {
     top: 22px;
   }
 
-  /* line 515, ../sass/main.scss */
+  /* line 513, ../sass/main.scss */
   #sp_menu {
     width: 100%;
     z-index: 2;
@@ -520,7 +518,7 @@ body {
     display: table;
     font-family: 'Futura-Oblique', serif;
   }
-  /* line 524, ../sass/main.scss */
+  /* line 522, ../sass/main.scss */
   #sp_menu ul {
     padding: 0;
     font-size: 20px;
@@ -528,31 +526,31 @@ body {
     text-align: center;
     margin: 0 10px 10px 0;
   }
-  /* line 530, ../sass/main.scss */
+  /* line 528, ../sass/main.scss */
   #sp_menu ul li {
     margin: auto;
     display: inline-block;
   }
-  /* line 533, ../sass/main.scss */
+  /* line 531, ../sass/main.scss */
   #sp_menu ul li:hover {
     background-color: black;
     color: white;
   }
-  /* line 537, ../sass/main.scss */
+  /* line 535, ../sass/main.scss */
   #sp_menu ul li::after {
     content: ' |';
   }
-  /* line 540, ../sass/main.scss */
+  /* line 538, ../sass/main.scss */
   #sp_menu ul li:last-child::after {
     content: '';
   }
-  /* line 543, ../sass/main.scss */
+  /* line 541, ../sass/main.scss */
   #sp_menu ul li a {
     z-index: 2;
     text-decoration: none;
     color: inherit;
   }
-  /* line 551, ../sass/main.scss */
+  /* line 549, ../sass/main.scss */
   #sp_menu nav {
     text-align: right;
     vertical-align: bottom;
@@ -570,47 +568,47 @@ body {
     transition: .5s ease-in-out;
     text-align: left;
   }
-  /* line 568, ../sass/main.scss */
+  /* line 566, ../sass/main.scss */
   #sp_menu nav.selected {
     opacity: 1;
     visibility: visible;
   }
-  /* line 574, ../sass/main.scss */
+  /* line 572, ../sass/main.scss */
   #sp_menu ul {
     margin: auto;
   }
-  /* line 576, ../sass/main.scss */
+  /* line 574, ../sass/main.scss */
   #sp_menu ul li {
     display: block;
     margin-top: 20px;
   }
-  /* line 579, ../sass/main.scss */
+  /* line 577, ../sass/main.scss */
   #sp_menu ul li a {
     display: block;
     line-height: 200%;
   }
-  /* line 583, ../sass/main.scss */
+  /* line 581, ../sass/main.scss */
   #sp_menu ul li::after {
     content: '';
   }
-  /* line 586, ../sass/main.scss */
+  /* line 584, ../sass/main.scss */
   #sp_menu ul li:last-child {
     border-bottom: none;
   }
 
-  /* line 593, ../sass/main.scss */
+  /* line 591, ../sass/main.scss */
   #navToggle {
     display: block;
   }
 
-  /* line 599, ../sass/main.scss */
+  /* line 597, ../sass/main.scss */
   .openNav #navToggle span:nth-child(1) {
     top: 11px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  /* line 605, ../sass/main.scss */
+  /* line 603, ../sass/main.scss */
   .openNav #navToggle span:nth-child(2), .openNav #navToggle span:nth-child(3) {
     top: 11px;
     -webkit-transform: rotate(45deg);
@@ -618,45 +616,45 @@ body {
     transform: rotate(45deg);
   }
 
-  /* line 614, ../sass/main.scss */
+  /* line 612, ../sass/main.scss */
   hr {
     margin: 0;
     border: none;
     height: 1.5px;
   }
 
-  /* line 620, ../sass/main.scss */
+  /* line 618, ../sass/main.scss */
   .about_title_underline {
     width: 40vw;
   }
 
-  /* line 624, ../sass/main.scss */
+  /* line 622, ../sass/main.scss */
   .teams_title_underline {
     width: 40vw;
   }
 
-  /* line 628, ../sass/main.scss */
+  /* line 626, ../sass/main.scss */
   .works_title_underline {
     width: 40vw;
   }
 
-  /* line 632, ../sass/main.scss */
+  /* line 630, ../sass/main.scss */
   .enqueue_title_underline {
     width: 40vw;
   }
 
-  /* line 636, ../sass/main.scss */
+  /* line 634, ../sass/main.scss */
   .contact_title_underline {
     width: 40vw;
   }
 
-  /* line 640, ../sass/main.scss */
+  /* line 638, ../sass/main.scss */
   .teams_page {
     margin: auto;
     text-align: left;
   }
 
-  /* line 645, ../sass/main.scss */
+  /* line 643, ../sass/main.scss */
   #teams_logo {
     width: 80%;
     margin: auto;
@@ -666,7 +664,7 @@ body {
     -ms-transition: -ms-transform 0.5s linear;
     transition: transform 0.5s linear;
   }
-  /* line 655, ../sass/main.scss */
+  /* line 653, ../sass/main.scss */
   #teams_logo:hover {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -679,7 +677,7 @@ body {
     transition: all  0.5s ease;
   }
 
-  /* line 669, ../sass/main.scss */
+  /* line 667, ../sass/main.scss */
   .enqueue_page {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -688,25 +686,25 @@ body {
     padding-right: 5vw;
   }
 
-  /* line 678, ../sass/main.scss */
+  /* line 676, ../sass/main.scss */
   .enqueue_image {
     width: 100%;
   }
 
-  /* line 682, ../sass/main.scss */
+  /* line 680, ../sass/main.scss */
   #e-mail {
     font-family: 'Ryumin', sans-serif;
     font-size: 18px;
     padding-top: 10vh;
   }
-  /* line 683, ../sass/main.scss */
+  /* line 681, ../sass/main.scss */
   #e-mail #email {
     font-family: 'Garamond', sans-serif;
     font-style: italic;
     font-size: 20px;
   }
 
-  /* line 693, ../sass/main.scss */
+  /* line 691, ../sass/main.scss */
   #greeting {
     font-size: 9.6vw;
     position: absolute;
@@ -715,7 +713,7 @@ body {
     text-align: center;
   }
 
-  /* line 701, ../sass/main.scss */
+  /* line 699, ../sass/main.scss */
   #hello {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -723,7 +721,7 @@ body {
     top: 0;
   }
 
-  /* line 708, ../sass/main.scss */
+  /* line 706, ../sass/main.scss */
   #queue {
     font-family: 'Futura', sans-serif;
     font-weight: 200;
@@ -735,12 +733,12 @@ body {
     transition: all  1s ease;
   }
 
-  /* line 719, ../sass/main.scss */
+  /* line 717, ../sass/main.scss */
   #tmenu {
     display: none;
   }
 
-  /* line 723, ../sass/main.scss */
+  /* line 721, ../sass/main.scss */
   #square {
     border: 12px solid black;
     bottom: 0;
