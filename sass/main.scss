@@ -158,6 +158,10 @@ body {
 					width: 12.5vw;
 				}
 
+				.message_title_underline{
+					width: 19vw;
+				}
+
 				.teams_title_underline{
 					width: 15vw;
 				}
@@ -196,13 +200,27 @@ body {
 					padding-top: 5vh;
 				}
 
-		    .about_paragraph_warp{
-		      height: 70vh;
-		    }
-
 				#about_paragraph{
 					font-size: 18px !important;
 					line-height: 250%;
+					letter-spacing: 6px;
+					padding-top: 5vh;
+					height: 70vh;
+				}
+
+				#message_page{
+					overflow-y: scroll;
+					overflow-x: hidden;
+					height: 100%;
+					width: 105%;
+					padding-right: 5vw;
+				}
+
+				#message_paragraph{
+					overflow-y: scroll;
+					overflow-x: hidden;
+					font-size: 16px !important;
+					line-height: 300%;
 					letter-spacing: 6px;
 					padding-top: 5vh;
 				}
@@ -210,23 +228,23 @@ body {
 				#teams_logo{
 					width: 100%;
 
-					-moz-transition: -moz-transform 0.5s linear;
-			    -webkit-transition: -webkit-transform 0.5s linear;
-			    -o-transition: -o-transform 0.5s linear;
-			    -ms-transition: -ms-transform 0.5s linear;
-			    transition: transform 0.5s linear;
+					-moz-transition: -moz-transform 0.25s linear;
+			    -webkit-transition: -webkit-transform 0.25s linear;
+			    -o-transition: -o-transform 0.25s linear;
+			    -ms-transition: -ms-transform 0.25s linear;
+			    transition: transform 0.25s linear;
 
 					&:hover{
-						-webkit-transform: scale(1.2);
-				    -moz-transform: scale(1.2);
-				    -o-transform: scale(1.2);
-				    -ms-transform: scale(1.2);
-				    transform: scale(1.2);
+						-webkit-transform: scale(1.1);
+				    -moz-transform: scale(1.1);
+				    -o-transform: scale(1.1);
+				    -ms-transform: scale(1.1);
+				    transform: scale(1.1);
 
-						-webkit-transition: all 0.5s ease;
-						-moz-transition: all 0.5s ease;
-						-o-transition: all 0.5s ease;
-						transition: all  0.5s ease;
+						-webkit-transition: all 0.25s ease;
+						-moz-transition: all 0.25s ease;
+						-o-transition: all 0.25s ease;
+						transition: all  0.25s ease;
 					}
 				}
 
@@ -244,7 +262,7 @@ body {
 
 				.teams_paragraph {
 					font-family: 'Ryumin', serif;
-					font-size: 18px !important;
+					font-size: 16px !important;
 					line-height: 200%;
 					padding-top: 5vh;
 				}
