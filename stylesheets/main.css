@@ -368,7 +368,7 @@ body {
     padding: 5vh 0 0 0;
     font-family: 'Ryumin', serif;
   }
-  /* line 421, ../sass/main.scss */
+  /* line 420, ../sass/main.scss */
   .content_wrap .content {
     position: absolute;
     display: none;
@@ -378,17 +378,17 @@ body {
     height: 68vh;
     font-size: 10px;
   }
-  /* line 430, ../sass/main.scss */
+  /* line 429, ../sass/main.scss */
   .content_wrap .content h1 {
     font-family: 'Futura-Oblique', sans-serif;
     letter-spacing: 2px;
     font-size: 7vw;
   }
-  /* line 435, ../sass/main.scss */
+  /* line 434, ../sass/main.scss */
   .content_wrap .content h1 #queue {
     font-family: 'Futura', sans-serif;
   }
-  /* line 440, ../sass/main.scss */
+  /* line 439, ../sass/main.scss */
   .content_wrap .content h2 {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -397,25 +397,25 @@ body {
     text-align: center;
     padding: 10vh 0;
   }
-  /* line 449, ../sass/main.scss */
+  /* line 448, ../sass/main.scss */
   .content_wrap .content h3 {
     font-family: 'Futura', 'Ryumin',  serif;
     font-weight: 200;
     font-size: 5vw;
   }
-  /* line 455, ../sass/main.scss */
+  /* line 454, ../sass/main.scss */
   .content_wrap .content .paragraph_warp {
     height: 65vh;
     padding-right: 5vw;
   }
-  /* line 460, ../sass/main.scss */
+  /* line 459, ../sass/main.scss */
   .content_wrap .content p {
     font-size: 18px !important;
     line-height: 200%;
     letter-spacing: 3px;
   }
 
-  /* line 469, ../sass/main.scss */
+  /* line 468, ../sass/main.scss */
   #top_logo_wrapper {
     display: none;
     float: right;
@@ -425,12 +425,12 @@ body {
     z-index: 2;
   }
 
-  /* line 478, ../sass/main.scss */
+  /* line 477, ../sass/main.scss */
   #top_logo {
     width: 100%;
     z-index: 2;
   }
-  /* line 482, ../sass/main.scss */
+  /* line 481, ../sass/main.scss */
   #top_logo:hover {
     z-index: 2;
     -webkit-transform: scale(1.1);
@@ -444,7 +444,7 @@ body {
     transition: all  0.5s ease;
   }
 
-  /* line 497, ../sass/main.scss */
+  /* line 496, ../sass/main.scss */
   #navToggle {
     position: absolute;
     left: 20px;
@@ -455,11 +455,11 @@ body {
     animation: fadeIn_menu 3s ease 0s 1 normal;
     -webkit-animation: fadeIn_menu 3s ease 0s 1 normal;
   }
-  /* line 508, ../sass/main.scss */
+  /* line 507, ../sass/main.scss */
   #navToggle div {
     position: relative;
   }
-  /* line 511, ../sass/main.scss */
+  /* line 510, ../sass/main.scss */
   #navToggle span {
     display: block;
     position: absolute;
@@ -469,20 +469,20 @@ body {
     -moz-transition: .35s ease-in-out;
     transition: .35s ease-in-out;
   }
-  /* line 519, ../sass/main.scss */
+  /* line 518, ../sass/main.scss */
   #navToggle span:nth-child(1) {
     top: 0;
   }
-  /* line 522, ../sass/main.scss */
+  /* line 521, ../sass/main.scss */
   #navToggle span:nth-child(2) {
     top: 11px;
   }
-  /* line 525, ../sass/main.scss */
+  /* line 524, ../sass/main.scss */
   #navToggle span:nth-child(3) {
     top: 22px;
   }
 
-  /* line 531, ../sass/main.scss */
+  /* line 530, ../sass/main.scss */
   #sp_menu {
     width: 100%;
     z-index: 2;
@@ -491,7 +491,7 @@ body {
     display: table;
     font-family: 'Futura-Oblique', serif;
   }
-  /* line 540, ../sass/main.scss */
+  /* line 539, ../sass/main.scss */
   #sp_menu ul {
     padding: 0;
     font-size: 20px;
@@ -499,31 +499,31 @@ body {
     text-align: center;
     margin: 0 10px 10px 0;
   }
-  /* line 546, ../sass/main.scss */
+  /* line 545, ../sass/main.scss */
   #sp_menu ul li {
     margin: auto;
     display: inline-block;
   }
-  /* line 549, ../sass/main.scss */
+  /* line 548, ../sass/main.scss */
   #sp_menu ul li:hover {
     background-color: black;
     color: white;
   }
-  /* line 553, ../sass/main.scss */
+  /* line 552, ../sass/main.scss */
   #sp_menu ul li::after {
     content: ' |';
   }
-  /* line 556, ../sass/main.scss */
+  /* line 555, ../sass/main.scss */
   #sp_menu ul li:last-child::after {
     content: '';
   }
-  /* line 559, ../sass/main.scss */
+  /* line 558, ../sass/main.scss */
   #sp_menu ul li a {
     z-index: 2;
     text-decoration: none;
     color: inherit;
   }
-  /* line 567, ../sass/main.scss */
+  /* line 566, ../sass/main.scss */
   #sp_menu nav {
     text-align: right;
     vertical-align: bottom;
@@ -541,47 +541,47 @@ body {
     transition: .5s ease-in-out;
     text-align: left;
   }
-  /* line 584, ../sass/main.scss */
+  /* line 583, ../sass/main.scss */
   #sp_menu nav.selected {
     opacity: 1;
     visibility: visible;
   }
-  /* line 590, ../sass/main.scss */
+  /* line 589, ../sass/main.scss */
   #sp_menu ul {
     margin: auto;
   }
-  /* line 592, ../sass/main.scss */
+  /* line 591, ../sass/main.scss */
   #sp_menu ul li {
     display: block;
     margin-top: 20px;
   }
-  /* line 595, ../sass/main.scss */
+  /* line 594, ../sass/main.scss */
   #sp_menu ul li a {
     display: block;
     line-height: 200%;
   }
-  /* line 599, ../sass/main.scss */
+  /* line 598, ../sass/main.scss */
   #sp_menu ul li::after {
     content: '';
   }
-  /* line 602, ../sass/main.scss */
+  /* line 601, ../sass/main.scss */
   #sp_menu ul li:last-child {
     border-bottom: none;
   }
 
-  /* line 609, ../sass/main.scss */
+  /* line 608, ../sass/main.scss */
   #navToggle {
     display: block;
   }
 
-  /* line 615, ../sass/main.scss */
+  /* line 614, ../sass/main.scss */
   .openNav #navToggle span:nth-child(1) {
     top: 11px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  /* line 621, ../sass/main.scss */
+  /* line 620, ../sass/main.scss */
   .openNav #navToggle span:nth-child(2), .openNav #navToggle span:nth-child(3) {
     top: 11px;
     -webkit-transform: rotate(45deg);
@@ -589,45 +589,45 @@ body {
     transform: rotate(45deg);
   }
 
-  /* line 630, ../sass/main.scss */
+  /* line 629, ../sass/main.scss */
   hr {
     margin: 0;
     border: none;
     height: 1.5px;
   }
 
-  /* line 636, ../sass/main.scss */
+  /* line 635, ../sass/main.scss */
   .about_title_underline {
     width: 40vw;
   }
 
-  /* line 640, ../sass/main.scss */
+  /* line 639, ../sass/main.scss */
   .teams_title_underline {
     width: 40vw;
   }
 
-  /* line 644, ../sass/main.scss */
+  /* line 643, ../sass/main.scss */
   .works_title_underline {
     width: 40vw;
   }
 
-  /* line 648, ../sass/main.scss */
+  /* line 647, ../sass/main.scss */
   .enqueue_title_underline {
     width: 40vw;
   }
 
-  /* line 652, ../sass/main.scss */
+  /* line 651, ../sass/main.scss */
   .contact_title_underline {
     width: 40vw;
   }
 
-  /* line 656, ../sass/main.scss */
+  /* line 655, ../sass/main.scss */
   .teams_page {
     margin: auto;
     text-align: left;
   }
 
-  /* line 661, ../sass/main.scss */
+  /* line 660, ../sass/main.scss */
   #teams_logo {
     width: 80%;
     margin: auto;
@@ -637,7 +637,7 @@ body {
     -ms-transition: -ms-transform 0.5s linear;
     transition: transform 0.5s linear;
   }
-  /* line 671, ../sass/main.scss */
+  /* line 670, ../sass/main.scss */
   #teams_logo:hover {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -650,7 +650,7 @@ body {
     transition: all  0.5s ease;
   }
 
-  /* line 685, ../sass/main.scss */
+  /* line 684, ../sass/main.scss */
   .enqueue_page {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -659,25 +659,25 @@ body {
     padding-right: 5vw;
   }
 
-  /* line 694, ../sass/main.scss */
+  /* line 693, ../sass/main.scss */
   .enqueue_image {
     width: 100%;
   }
 
-  /* line 698, ../sass/main.scss */
+  /* line 697, ../sass/main.scss */
   #e-mail {
     font-family: 'Ryumin', sans-serif;
     font-size: 18px;
     padding-top: 10vh;
   }
-  /* line 699, ../sass/main.scss */
+  /* line 698, ../sass/main.scss */
   #e-mail #email {
     font-family: 'Garamond', sans-serif;
     font-style: italic;
     font-size: 20px;
   }
 
-  /* line 709, ../sass/main.scss */
+  /* line 708, ../sass/main.scss */
   #greeting {
     font-size: 9.6vw;
     position: absolute;
@@ -686,7 +686,7 @@ body {
     text-align: center;
   }
 
-  /* line 717, ../sass/main.scss */
+  /* line 716, ../sass/main.scss */
   #hello {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -694,7 +694,7 @@ body {
     top: 0;
   }
 
-  /* line 724, ../sass/main.scss */
+  /* line 723, ../sass/main.scss */
   #queue {
     font-family: 'Futura', sans-serif;
     font-weight: 200;
@@ -706,12 +706,12 @@ body {
     transition: all  1s ease;
   }
 
-  /* line 735, ../sass/main.scss */
+  /* line 734, ../sass/main.scss */
   #tmenu {
     display: none;
   }
 
-  /* line 739, ../sass/main.scss */
+  /* line 738, ../sass/main.scss */
   #square {
     border: 12px solid black;
     bottom: 0;

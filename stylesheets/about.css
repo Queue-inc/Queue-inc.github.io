@@ -31,6 +31,11 @@ body {
 
 @media screen and (min-width: 960px) {
   /* line 44, ../sass/about.scss */
+  #sp_menu {
+    display: none;
+  }
+
+  /* line 48, ../sass/about.scss */
   #greeting {
     font-size: 8vw;
     color: black;
@@ -41,7 +46,7 @@ body {
     text-align: center;
   }
 
-  /* line 54, ../sass/about.scss */
+  /* line 58, ../sass/about.scss */
   #hello {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -49,7 +54,7 @@ body {
     top: 0;
   }
 
-  /* line 61, ../sass/about.scss */
+  /* line 65, ../sass/about.scss */
   #queue {
     font-family: 'Futura', sans-serif;
     font-weight: 200;
@@ -57,7 +62,7 @@ body {
     top: 0;
   }
 
-  /* line 68, ../sass/about.scss */
+  /* line 72, ../sass/about.scss */
   #top_logo_wrapper {
     float: right;
     position: relative;
@@ -66,12 +71,12 @@ body {
     z-index: 2;
   }
 
-  /* line 76, ../sass/about.scss */
+  /* line 80, ../sass/about.scss */
   #top_logo {
     width: 100%;
     z-index: 2;
   }
-  /* line 80, ../sass/about.scss */
+  /* line 84, ../sass/about.scss */
   #top_logo:hover {
     z-index: 2;
     -webkit-transform: scale(1.1);
@@ -85,7 +90,7 @@ body {
     transition: all  0.5s ease;
   }
 
-  /* line 95, ../sass/about.scss */
+  /* line 99, ../sass/about.scss */
   #square {
     z-index: 0;
     border: 20px solid black;
@@ -102,13 +107,13 @@ body {
     -o-transition: all 1s ease;
     transition: all  1s ease;
   }
-  /* line 111, ../sass/about.scss */
+  /* line 115, ../sass/about.scss */
   #square .content_wrap {
     padding: 40px 6vw 0 12vw;
     position: relative;
     font-family: 'Ryumin', serif;
   }
-  /* line 116, ../sass/about.scss */
+  /* line 120, ../sass/about.scss */
   #square .content_wrap .content {
     position: absolute;
     margin-left: 80px;
@@ -118,52 +123,52 @@ body {
     width: auto;
     overflow: hidden;
   }
-  /* line 125, ../sass/about.scss */
+  /* line 129, ../sass/about.scss */
   #square .content_wrap .content h1 {
     font-family: 'Futura-Oblique', sans-serif;
     letter-spacing: 2px;
     font-size: 2vw;
   }
-  /* line 130, ../sass/about.scss */
+  /* line 134, ../sass/about.scss */
   #square .content_wrap .content h1 #queue {
     font-family: 'Futura', sans-serif;
   }
-  /* line 134, ../sass/about.scss */
+  /* line 138, ../sass/about.scss */
   #square .content_wrap .content h1 #others {
     font-family: 'Garamond', serif;
     font-style: italic;
   }
-  /* line 140, ../sass/about.scss */
+  /* line 144, ../sass/about.scss */
   #square .content_wrap .content hr {
     margin: 0;
     border: none;
     height: 1.5px;
   }
-  /* line 146, ../sass/about.scss */
+  /* line 150, ../sass/about.scss */
   #square .content_wrap .content .about_title_underline {
     width: 12.5vw;
   }
-  /* line 150, ../sass/about.scss */
+  /* line 154, ../sass/about.scss */
   #square .content_wrap .content .message_title_underline {
     width: 19vw;
   }
-  /* line 154, ../sass/about.scss */
+  /* line 158, ../sass/about.scss */
   #square .content_wrap .content .teams_title_underline {
     width: 15vw;
   }
-  /* line 158, ../sass/about.scss */
+  /* line 162, ../sass/about.scss */
   #square .content_wrap .content .works_title_underline {
     width: 13vw;
   }
-  /* line 162, ../sass/about.scss */
+  /* line 166, ../sass/about.scss */
   #square .content_wrap .content .enqueue_title_underline {
     width: 8vw;
   }
-  /* line 166, ../sass/about.scss */
+  /* line 170, ../sass/about.scss */
   #square .content_wrap .content .contact_title_underline {
     width: 16vw;
   }
-  /* line 170, ../sass/about.scss */
+  /* line 174, ../sass/about.scss */
   #square .content_wrap .content h2 {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -172,20 +177,20 @@ body {
     text-align: center;
     padding: 10vh 0;
   }
-  /* line 179, ../sass/about.scss */
+  /* line 183, ../sass/about.scss */
   #square .content_wrap .content h3 {
     font-family: 'Futura', 'Ryumin',  serif;
     font-weight: 200;
     font-size: 1.5vw;
   }
-  /* line 185, ../sass/about.scss */
+  /* line 189, ../sass/about.scss */
   #square .content_wrap .content .paragraph {
     font-size: 16px !important;
     line-height: 300%;
     letter-spacing: 6px;
     padding-top: 5vh;
   }
-  /* line 192, ../sass/about.scss */
+  /* line 196, ../sass/about.scss */
   #square .content_wrap .content #about_paragraph {
     font-size: 16px !important;
     line-height: 300%;
@@ -193,7 +198,7 @@ body {
     padding-top: 5vh;
     height: 70vh;
   }
-  /* line 202, ../sass/about.scss */
+  /* line 206, ../sass/about.scss */
   #square #tmenu {
     text-decoration: none;
     font-family: 'Futura-Oblique', sans-serif;
@@ -205,16 +210,16 @@ body {
     animation: fadeIn_menu 5s ease 0s 1 normal;
     -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
   }
-  /* line 213, ../sass/about.scss */
+  /* line 217, ../sass/about.scss */
   #square #tmenu tr .selected {
     background-color: black;
     color: white;
   }
-  /* line 218, ../sass/about.scss */
+  /* line 222, ../sass/about.scss */
   #square #tmenu .amenu_wrap {
     padding-left: 60px;
   }
-  /* line 222, ../sass/about.scss */
+  /* line 226, ../sass/about.scss */
   #square #tmenu .amenu {
     text-decoration: none;
     color: black;
@@ -225,49 +230,61 @@ body {
     text-align: left;
     text-decoration: none;
   }
-  /* line 231, ../sass/about.scss */
+  /* line 235, ../sass/about.scss */
   #square #tmenu .amenu:hover {
     text-decoration: none;
     background-color: black;
     color: white;
   }
 
-  /* line 240, ../sass/about.scss */
+  /* line 244, ../sass/about.scss */
   #square .title {
     font-size: 1em;
   }
-  /* line 242, ../sass/about.scss */
+  /* line 246, ../sass/about.scss */
   #square .title.select {
     font-size: 12em;
   }
 }
 @media screen and (max-width: 959px) {
-  /* line 249, ../sass/about.scss */
+  /* line 253, ../sass/about.scss */
+  html {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* line 258, ../sass/about.scss */
+  body {
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+  }
+
+  /* line 264, ../sass/about.scss */
   .content_wrap {
     padding: 5vh 0 0 0;
     font-family: 'Ryumin', serif;
   }
-  /* line 252, ../sass/about.scss */
+  /* line 267, ../sass/about.scss */
   .content_wrap .content {
     position: absolute;
-    display: none;
     overflow-y: scroll;
     overflow-x: hidden;
     margin: 30px 5vw calc(10vh + 40px) 5vw;
     height: 68vh;
     font-size: 10px;
   }
-  /* line 261, ../sass/about.scss */
+  /* line 275, ../sass/about.scss */
   .content_wrap .content h1 {
     font-family: 'Futura-Oblique', sans-serif;
     letter-spacing: 2px;
     font-size: 7vw;
   }
-  /* line 266, ../sass/about.scss */
+  /* line 280, ../sass/about.scss */
   .content_wrap .content h1 #queue {
     font-family: 'Futura', sans-serif;
   }
-  /* line 271, ../sass/about.scss */
+  /* line 285, ../sass/about.scss */
   .content_wrap .content h2 {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -276,25 +293,54 @@ body {
     text-align: center;
     padding: 10vh 0;
   }
-  /* line 280, ../sass/about.scss */
+  /* line 294, ../sass/about.scss */
   .content_wrap .content h3 {
     font-family: 'Futura', 'Ryumin',  serif;
     font-weight: 200;
     font-size: 5vw;
   }
-  /* line 286, ../sass/about.scss */
+  /* line 300, ../sass/about.scss */
   .content_wrap .content .paragraph_warp {
     height: 65vh;
     padding-right: 5vw;
   }
-  /* line 291, ../sass/about.scss */
+  /* line 305, ../sass/about.scss */
   .content_wrap .content p {
     font-size: 18px !important;
     line-height: 200%;
     letter-spacing: 3px;
   }
 
-  /* line 299, ../sass/about.scss */
+  /* line 314, ../sass/about.scss */
+  #top_logo_wrapper {
+    display: none;
+    float: right;
+    top: 0;
+    position: relative;
+    width: 40px;
+    z-index: 2;
+  }
+
+  /* line 323, ../sass/about.scss */
+  #top_logo {
+    width: 100%;
+    z-index: 2;
+  }
+  /* line 327, ../sass/about.scss */
+  #top_logo:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all  0.5s ease;
+  }
+
+  /* line 342, ../sass/about.scss */
   #navToggle {
     position: absolute;
     left: 20px;
@@ -305,11 +351,11 @@ body {
     animation: fadeIn_menu 3s ease 0s 1 normal;
     -webkit-animation: fadeIn_menu 3s ease 0s 1 normal;
   }
-  /* line 310, ../sass/about.scss */
+  /* line 353, ../sass/about.scss */
   #navToggle div {
     position: relative;
   }
-  /* line 313, ../sass/about.scss */
+  /* line 356, ../sass/about.scss */
   #navToggle span {
     display: block;
     position: absolute;
@@ -319,20 +365,20 @@ body {
     -moz-transition: .35s ease-in-out;
     transition: .35s ease-in-out;
   }
-  /* line 321, ../sass/about.scss */
+  /* line 364, ../sass/about.scss */
   #navToggle span:nth-child(1) {
     top: 0;
   }
-  /* line 324, ../sass/about.scss */
+  /* line 367, ../sass/about.scss */
   #navToggle span:nth-child(2) {
     top: 11px;
   }
-  /* line 327, ../sass/about.scss */
+  /* line 370, ../sass/about.scss */
   #navToggle span:nth-child(3) {
     top: 22px;
   }
 
-  /* line 333, ../sass/about.scss */
+  /* line 376, ../sass/about.scss */
   #sp_menu {
     width: 100%;
     z-index: 2;
@@ -341,7 +387,7 @@ body {
     display: table;
     font-family: 'Futura-Oblique', serif;
   }
-  /* line 342, ../sass/about.scss */
+  /* line 385, ../sass/about.scss */
   #sp_menu ul {
     padding: 0;
     font-size: 20px;
@@ -349,31 +395,31 @@ body {
     text-align: center;
     margin: 0 10px 10px 0;
   }
-  /* line 348, ../sass/about.scss */
+  /* line 391, ../sass/about.scss */
   #sp_menu ul li {
     margin: auto;
     display: inline-block;
   }
-  /* line 351, ../sass/about.scss */
+  /* line 394, ../sass/about.scss */
   #sp_menu ul li:hover {
     background-color: black;
     color: white;
   }
-  /* line 355, ../sass/about.scss */
+  /* line 398, ../sass/about.scss */
   #sp_menu ul li::after {
     content: ' |';
   }
-  /* line 358, ../sass/about.scss */
+  /* line 401, ../sass/about.scss */
   #sp_menu ul li:last-child::after {
     content: '';
   }
-  /* line 361, ../sass/about.scss */
+  /* line 404, ../sass/about.scss */
   #sp_menu ul li a {
     z-index: 2;
     text-decoration: none;
     color: inherit;
   }
-  /* line 369, ../sass/about.scss */
+  /* line 412, ../sass/about.scss */
   #sp_menu nav {
     text-align: right;
     vertical-align: bottom;
@@ -391,47 +437,47 @@ body {
     transition: .5s ease-in-out;
     text-align: left;
   }
-  /* line 386, ../sass/about.scss */
+  /* line 429, ../sass/about.scss */
   #sp_menu nav.selected {
     opacity: 1;
     visibility: visible;
   }
-  /* line 392, ../sass/about.scss */
+  /* line 435, ../sass/about.scss */
   #sp_menu ul {
     margin: auto;
   }
-  /* line 394, ../sass/about.scss */
+  /* line 437, ../sass/about.scss */
   #sp_menu ul li {
     display: block;
     margin-top: 20px;
   }
-  /* line 397, ../sass/about.scss */
+  /* line 440, ../sass/about.scss */
   #sp_menu ul li a {
     display: block;
     line-height: 200%;
   }
-  /* line 401, ../sass/about.scss */
+  /* line 444, ../sass/about.scss */
   #sp_menu ul li::after {
     content: '';
   }
-  /* line 404, ../sass/about.scss */
+  /* line 447, ../sass/about.scss */
   #sp_menu ul li:last-child {
     border-bottom: none;
   }
 
-  /* line 411, ../sass/about.scss */
+  /* line 454, ../sass/about.scss */
   #navToggle {
     display: block;
   }
 
-  /* line 417, ../sass/about.scss */
+  /* line 460, ../sass/about.scss */
   .openNav #navToggle span:nth-child(1) {
     top: 11px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  /* line 423, ../sass/about.scss */
+  /* line 466, ../sass/about.scss */
   .openNav #navToggle span:nth-child(2), .openNav #navToggle span:nth-child(3) {
     top: 11px;
     -webkit-transform: rotate(45deg);
@@ -439,19 +485,66 @@ body {
     transform: rotate(45deg);
   }
 
-  /* line 432, ../sass/about.scss */
+  /* line 475, ../sass/about.scss */
   hr {
     margin: 0;
     border: none;
     height: 1.5px;
   }
 
-  /* line 438, ../sass/about.scss */
+  /* line 481, ../sass/about.scss */
   .about_title_underline {
     width: 40vw;
   }
 
-  /* line 442, ../sass/about.scss */
+  /* line 485, ../sass/about.scss */
+  .teams_title_underline {
+    width: 40vw;
+  }
+
+  /* line 489, ../sass/about.scss */
+  .works_title_underline {
+    width: 40vw;
+  }
+
+  /* line 493, ../sass/about.scss */
+  .enqueue_title_underline {
+    width: 40vw;
+  }
+
+  /* line 497, ../sass/about.scss */
+  .contact_title_underline {
+    width: 40vw;
+  }
+
+  /* line 501, ../sass/about.scss */
+  .enqueue_page {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 105%;
+    padding-right: 5vw;
+  }
+
+  /* line 510, ../sass/about.scss */
+  .enqueue_image {
+    width: 100%;
+  }
+
+  /* line 514, ../sass/about.scss */
+  #e-mail {
+    font-family: 'Ryumin', sans-serif;
+    font-size: 18px;
+    padding-top: 10vh;
+  }
+  /* line 515, ../sass/about.scss */
+  #e-mail #email {
+    font-family: 'Garamond', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  /* line 525, ../sass/about.scss */
   #greeting {
     font-size: 9.6vw;
     position: absolute;
@@ -460,7 +553,7 @@ body {
     text-align: center;
   }
 
-  /* line 450, ../sass/about.scss */
+  /* line 533, ../sass/about.scss */
   #hello {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -468,7 +561,7 @@ body {
     top: 0;
   }
 
-  /* line 457, ../sass/about.scss */
+  /* line 540, ../sass/about.scss */
   #queue {
     font-family: 'Futura', sans-serif;
     font-weight: 200;
@@ -480,7 +573,12 @@ body {
     transition: all  1s ease;
   }
 
-  /* line 468, ../sass/about.scss */
+  /* line 551, ../sass/about.scss */
+  #tmenu {
+    display: none;
+  }
+
+  /* line 555, ../sass/about.scss */
   #square {
     border: 12px solid black;
     bottom: 0;
