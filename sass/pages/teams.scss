@@ -1,0 +1,58 @@
+@import "compass";
+
+$color_1: black;
+$color_2: white;
+$border_1 : 12px solid $color_1;
+$border_2 : 20px solid $color_1;
+$h1_fontsize : calc(3vw+3vh);
+
+@media screen and (min-width: 960px)  {
+		#teams_logo{
+			width: 80%;
+			margin: auto;
+
+			-moz-transition: -moz-transform 0.5s linear;
+			-webkit-transition: -webkit-transform 0.5s linear;
+			-o-transition: -o-transform 0.5s linear;
+			-ms-transition: -ms-transform 0.5s linear;
+			transition: transform 0.5s linear;
+
+			&:hover{
+				-webkit-transform: scale(1.2);
+				-moz-transform: scale(1.2);
+				-o-transform: scale(1.2);
+				-ms-transform: scale(1.2);
+				transform: scale(1.2);
+
+				-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				transition: all  0.5s ease;
+			}
+		}
+
+		.teams_page{
+			overflow-y: scroll;
+			overflow-x: hidden;
+			height: 100%;
+			width: 105%;
+			padding-right: 5vw;
+		}
+
+		.teams_paragraph {
+			font-size: 16px !important;
+			line-height: 300%;
+			letter-spacing: 6px;
+			padding-top: 5vh;
+		}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}

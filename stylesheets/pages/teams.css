@@ -1,0 +1,57 @@
+@media screen and (min-width: 960px) {
+  /* line 10, ../../sass/pages/teams.scss */
+  #teams_logo {
+    width: 80%;
+    margin: auto;
+    -moz-transition: -moz-transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -o-transition: -o-transform 0.5s linear;
+    -ms-transition: -ms-transform 0.5s linear;
+    transition: transform 0.5s linear;
+  }
+  /* line 20, ../../sass/pages/teams.scss */
+  #teams_logo:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all  0.5s ease;
+  }
+
+  /* line 34, ../../sass/pages/teams.scss */
+  .teams_page {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 105%;
+    padding-right: 5vw;
+  }
+
+  /* line 42, ../../sass/pages/teams.scss */
+  .teams_paragraph {
+    font-size: 16px !important;
+    line-height: 300%;
+    letter-spacing: 6px;
+    padding-top: 5vh;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

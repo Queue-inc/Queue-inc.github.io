@@ -1,0 +1,409 @@
+@font-face {
+  font-family: 'Futura';
+  src: url(../fonts/Futura/Futura.ttf);
+}
+@font-face {
+  font-family: 'Futura-Oblique';
+  src: url(../fonts/Futura/Futura-Oblique.ttf) format("truetype");
+}
+@font-face {
+  font-family: 'Garamond';
+  src: url(../fonts/Garamond/AGaramondPro-Italic.otf) format("opentype");
+}
+@font-face {
+  font-family: 'Ryumin';
+  src: url(../fonts/Ryumin/A-OTF-RyuminPro-Medium.otf) format("opentype");
+}
+/* line 29, ../sass/mobile.scss */
+html {
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 34, ../sass/mobile.scss */
+body {
+  height: 100%;
+  background-color: white;
+  margin: 0 0 0 0;
+  animation: fadeIn 2s ease 0s 1 normal;
+  -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+@media screen and (max-width: 959px) {
+  /* line 44, ../sass/mobile.scss */
+  html {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* line 49, ../sass/mobile.scss */
+  body {
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+  }
+
+  /* line 54, ../sass/mobile.scss */
+  .content_wrap {
+    padding: 5vh 0 0 0;
+    font-family: 'Ryumin', serif;
+  }
+  /* line 57, ../sass/mobile.scss */
+  .content_wrap .content {
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 30px 5vw calc(10vh + 40px) 5vw;
+    height: 68vh;
+    font-size: 10px;
+  }
+  /* line 65, ../sass/mobile.scss */
+  .content_wrap .content h1 {
+    font-family: 'Futura-Oblique', sans-serif;
+    letter-spacing: 2px;
+    font-size: 7vw;
+  }
+  /* line 70, ../sass/mobile.scss */
+  .content_wrap .content h1 #queue {
+    font-family: 'Futura', sans-serif;
+  }
+  /* line 75, ../sass/mobile.scss */
+  .content_wrap .content h2 {
+    font-family: 'Garamond', serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 6vw;
+    text-align: center;
+    padding: 10vh 0;
+  }
+  /* line 84, ../sass/mobile.scss */
+  .content_wrap .content h3 {
+    font-family: 'Futura', 'Ryumin',  serif;
+    font-weight: 200;
+    font-size: 5vw;
+  }
+  /* line 90, ../sass/mobile.scss */
+  .content_wrap .content .paragraph_warp {
+    height: 65vh;
+    padding-right: 5vw;
+  }
+  /* line 95, ../sass/mobile.scss */
+  .content_wrap .content p {
+    font-size: 16px !important;
+    line-height: 200%;
+    letter-spacing: 3px;
+  }
+
+  /* line 104, ../sass/mobile.scss */
+  #top_logo_wrapper {
+    display: none;
+    float: right;
+    top: 0;
+    position: relative;
+    width: 40px;
+    z-index: 2;
+  }
+
+  /* line 113, ../sass/mobile.scss */
+  #top_logo {
+    width: 100%;
+    z-index: 2;
+  }
+  /* line 117, ../sass/mobile.scss */
+  #top_logo:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all  0.5s ease;
+  }
+
+  /* line 132, ../sass/mobile.scss */
+  #navToggle {
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    animation: fadeIn_menu 3s ease 0s 1 normal;
+    -webkit-animation: fadeIn_menu 3s ease 0s 1 normal;
+  }
+  /* line 143, ../sass/mobile.scss */
+  #navToggle div {
+    position: relative;
+  }
+  /* line 146, ../sass/mobile.scss */
+  #navToggle span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-bottom: solid 3px black;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+  }
+  /* line 154, ../sass/mobile.scss */
+  #navToggle span:nth-child(1) {
+    top: 0;
+  }
+  /* line 157, ../sass/mobile.scss */
+  #navToggle span:nth-child(2) {
+    top: 11px;
+  }
+  /* line 160, ../sass/mobile.scss */
+  #navToggle span:nth-child(3) {
+    top: 22px;
+  }
+
+  /* line 166, ../sass/mobile.scss */
+  #sp_menu {
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.7);
+    display: table;
+    font-family: 'Futura-Oblique', serif;
+  }
+  /* line 175, ../sass/mobile.scss */
+  #sp_menu ul {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    margin: 0 10px 10px 0;
+  }
+  /* line 181, ../sass/mobile.scss */
+  #sp_menu ul li {
+    margin: auto;
+    display: inline-block;
+  }
+  /* line 184, ../sass/mobile.scss */
+  #sp_menu ul li:hover {
+    background-color: black;
+    color: white;
+  }
+  /* line 188, ../sass/mobile.scss */
+  #sp_menu ul li::after {
+    content: ' |';
+  }
+  /* line 191, ../sass/mobile.scss */
+  #sp_menu ul li:last-child::after {
+    content: '';
+  }
+  /* line 194, ../sass/mobile.scss */
+  #sp_menu ul li a {
+    z-index: 2;
+    text-decoration: none;
+    color: inherit;
+  }
+  /* line 202, ../sass/mobile.scss */
+  #sp_menu nav {
+    text-align: right;
+    vertical-align: bottom;
+    position: absolute;
+    top: 40px !important;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    padding: 0 10px;
+    width: 80vw;
+    margin: 0 auto;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    text-align: left;
+  }
+  /* line 219, ../sass/mobile.scss */
+  #sp_menu nav.selected {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* line 225, ../sass/mobile.scss */
+  #sp_menu ul {
+    margin: auto;
+  }
+  /* line 227, ../sass/mobile.scss */
+  #sp_menu ul li {
+    display: block;
+    margin-top: 20px;
+  }
+  /* line 230, ../sass/mobile.scss */
+  #sp_menu ul li a {
+    display: block;
+    line-height: 200%;
+  }
+  /* line 234, ../sass/mobile.scss */
+  #sp_menu ul li::after {
+    content: '';
+  }
+  /* line 237, ../sass/mobile.scss */
+  #sp_menu ul li:last-child {
+    border-bottom: none;
+  }
+
+  /* line 244, ../sass/mobile.scss */
+  #navToggle {
+    display: block;
+  }
+
+  /* line 250, ../sass/mobile.scss */
+  .openNav #navToggle span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  /* line 256, ../sass/mobile.scss */
+  .openNav #navToggle span:nth-child(2), .openNav #navToggle span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* line 265, ../sass/mobile.scss */
+  hr {
+    margin: 0;
+    border: none;
+    height: 1.5px;
+  }
+
+  /* line 271, ../sass/mobile.scss */
+  .about_title_underline {
+    width: 40vw;
+  }
+
+  /* line 275, ../sass/mobile.scss */
+  .teams_title_underline {
+    width: 40vw;
+  }
+
+  /* line 279, ../sass/mobile.scss */
+  .works_title_underline {
+    width: 40vw;
+  }
+
+  /* line 283, ../sass/mobile.scss */
+  .enqueue_title_underline {
+    width: 40vw;
+  }
+
+  /* line 287, ../sass/mobile.scss */
+  .contact_title_underline {
+    width: 40vw;
+  }
+
+  /* line 291, ../sass/mobile.scss */
+  .teams_page {
+    margin: auto;
+    text-align: left;
+  }
+
+  /* line 296, ../sass/mobile.scss */
+  #teams_logo {
+    width: 80%;
+    margin: auto;
+    -moz-transition: -moz-transform 0.5s linear;
+    -webkit-transition: -webkit-transform 0.5s linear;
+    -o-transition: -o-transform 0.5s linear;
+    -ms-transition: -ms-transform 0.5s linear;
+    transition: transform 0.5s linear;
+  }
+  /* line 306, ../sass/mobile.scss */
+  #teams_logo:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all  0.5s ease;
+  }
+
+  /* line 320, ../sass/mobile.scss */
+  .enqueue_page {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 105%;
+    padding-right: 5vw;
+  }
+
+  /* line 329, ../sass/mobile.scss */
+  .enqueue_image {
+    width: 100%;
+  }
+
+  /* line 333, ../sass/mobile.scss */
+  #e-mail {
+    font-family: 'Ryumin', sans-serif;
+    font-size: 18px;
+    padding-top: 10vh;
+  }
+  /* line 334, ../sass/mobile.scss */
+  #e-mail #email {
+    font-family: 'Garamond', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  /* line 344, ../sass/mobile.scss */
+  #tmenu {
+    display: none;
+  }
+
+  /* line 348, ../sass/mobile.scss */
+  #square {
+    border: 12px solid black;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 85vh;
+    width: 90vw;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all  1s ease;
+  }
+
+  /* line 364, ../sass/mobile.scss */
+  #greeting {
+    font-size: 9.6vw;
+    position: absolute;
+    bottom: -5vw;
+    right: 0;
+    text-align: center;
+  }
+
+  /* line 372, ../sass/mobile.scss */
+  #hello {
+    font-family: 'Garamond', serif;
+    font-style: italic;
+    position: relative;
+    top: 0;
+  }
+
+  /* line 379, ../sass/mobile.scss */
+  #queue {
+    font-family: 'Futura', sans-serif;
+    font-weight: 200;
+    position: relative;
+    top: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all  1s ease;
+  }
+}

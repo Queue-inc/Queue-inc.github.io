@@ -40,255 +40,6 @@ body {
   -webkit-animation: fadeIn 2s ease 0s 1 normal;
 }
 
-@media screen and (min-width: 960px)  {
-	#sp_menu{
-		display: none;
-	}
-
-	#square {
-		z-index: 0;
-	  border: $border_2;
-	  bottom: 0;
-	  left: 0;
-	  margin: auto;
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	  height: 90vh;
-	  width: 90vw;
-	  -webkit-transition: all 1s ease;
-	  -moz-transition: all 1s ease;
-	  -o-transition: all 1s ease;
-	  transition: all  1s ease;
-
-		#top_logo_wrapper {
-			float: right;
-			position: relative;
-			margin: -20px 20px 20px 0;
-			width: 5vw;
-			z-index: 2;
-		}
-
-		#top_logo {
-			width: 100%;
-			z-index: 2;
-
-			&:hover{
-				z-index: 2;
-				-webkit-transform: scale(1.1);
-				-moz-transform: scale(1.1);
-				-o-transform: scale(1.1);
-				-ms-transform: scale(1.1);
-				transform: scale(1.1);
-
-				-webkit-transition: all 0.5s ease;
-				-moz-transition: all 0.5s ease;
-				-o-transition: all 0.5s ease;
-				transition: all  0.5s ease;
-			}
-		}
-
-		.teams_page{
-			margin: auto;
-			text-align: left;
-		}
-
-		#teams_logo{
-			width: 80%;
-			margin: auto;
-
-			-moz-transition: -moz-transform 0.5s linear;
-			-webkit-transition: -webkit-transform 0.5s linear;
-			-o-transition: -o-transform 0.5s linear;
-			-ms-transition: -ms-transform 0.5s linear;
-			transition: transform 0.5s linear;
-
-			&:hover{
-				-webkit-transform: scale(1.2);
-				-moz-transform: scale(1.2);
-				-o-transform: scale(1.2);
-				-ms-transform: scale(1.2);
-				transform: scale(1.2);
-
-				-webkit-transition: all 0.5s ease;
-				-moz-transition: all 0.5s ease;
-				-o-transition: all 0.5s ease;
-				transition: all  0.5s ease;
-			}
-		}
-
-		.teams_page{
-			overflow-y: scroll;
-			overflow-x: hidden;
-			height: 100%;
-			width: 105%;
-			padding-right: 5vw;
-
-			.teams_of{
-				padding-right: 18px;
-			}
-		}
-
-		.teams_paragraph {
-			font-family: 'Ryumin', serif;
-			font-size: 16px !important;
-			line-height: 300%;
-			letter-spacing: 6px;
-			padding-top: 5vh;
-		}
-
-		.teams_detail_paragraph {
-			font-family: 'Ryumin', serif;
-			font-size: 14px !important;
-			line-height: 200%;
-		}
-
-		.teams_section {
-			padding-top: 2vh;
-		}
-
-		.teams_detail {
-			padding-top: 5vh;
-		}
-
-		.content_wrap {
-		  padding:40px 6vw 0 12vw;
-		  position: relative;
-		  font-family: 'Ryumin', serif;
-
-		  .content {
-		    position: absolute;
-				margin-left: 80px;
-				margin-right: 140px;
-				height: 90vh;
-				padding-bottom: calc(10vh + 50px);
-				width: auto;
-				overflow: hidden;
-
-		    h1{
-		      font-family: 'Futura-Oblique', sans-serif;
-					letter-spacing: 2px;
-		      font-size: 2vw;
-
-					#queue{
-						font-family: 'Futura', sans-serif;
-					}
-
-					#others{
-						font-family: 'Garamond', serif;
-						font-style: italic;
-					}
-		    }
-
-				hr {
-					margin: 0;
-					border: none;
-					height: 1.5px;
-				}
-
-				.about_title_underline{
-					width: 12.5vw;
-				}
-
-				.message_title_underline{
-					width: 19vw;
-				}
-
-				.teams_title_underline{
-					width: 15vw;
-				}
-
-				.works_title_underline{
-					width: 13vw;
-				}
-
-				.enqueue_title_underline {
-					width: 8vw;
-				}
-
-				.contact_title_underline{
-					width: 16vw;
-				}
-
-				h2{
-					font-family: 'Garamond', serif;
-					font-style: italic;
-					font-weight: 200;
-					font-size: 2vw;
-					text-align: center;
-					padding: 10vh 0;
-				}
-
-				h3{
-					font-family: 'Futura', 'Ryumin',  serif;
-					font-weight: 200;
-					font-size: 1.5vw;
-				}
-
-				.paragraph{
-					font-size: 16px !important;
-					line-height: 300%;
-					letter-spacing: 6px;
-					padding-top: 5vh;
-				}
-
-				#about_paragraph{
-					font-size: 16px !important;
-					line-height: 300%;
-					letter-spacing: 6px;
-					padding-top: 5vh;
-					height: 70vh;
-				}
-		  }
-		}
-
-		#tmenu {
-			text-decoration: none;
-			font-family: 'Futura-Oblique', sans-serif;
-			font-size: 18px;
-			letter-spacing: 3px;
-			float: left;
-			position: fixed;
-			margin: 0 20px 0 -14vw;
-			animation: fadeIn_menu 5s ease 0s 1 normal;
-			-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
-
-			tr .selected{
-				background-color: $color_1;
-				color: $color_2;
-			}
-
-			.amenu_wrap{
-				padding-left: 60px;
-			}
-
-			.amenu {
-				text-decoration: none;
-				color: $color_1;
-				display: block;
-				padding-left: 14vw;
-				padding-right: 1vw;
-				margin-top: 16px;;
-				text-align: left;
-				text-decoration: none;
-				&:hover {
-					text-decoration: none;
-					background-color: $color_1;
-					color: $color_2;
-				}
-			}
-		}
-	}
-
-	#square .title {
-	  font-size: 1em;
-	  &.select {
-	    font-size: 12em;
-	  }
-	}
-}
-
-
 @media screen and (max-width: 959px) {
 	html {
 	  height: 100%;
@@ -342,7 +93,7 @@ body {
 			}
 
 			p {
-				font-size: 18px !important;
+				font-size: 16px !important;
 				line-height: 200%;
 				letter-spacing: 3px;
 			}
@@ -609,14 +360,30 @@ body {
 	  -o-transition: all 1s ease;
 	  transition: all  1s ease;
 	}
-}
 
-@keyframes fadeIn {
-    0% {opacity: 0}
-    100% {opacity: 1}
-}
+	#greeting {
+		font-size: 9.6vw;
+		position: absolute;
+		bottom: -5vw;
+		right: 0;
+		text-align: center;
+	}
 
-@-webkit-keyframes fadeIn {
-    0% {opacity: 0}
-    100% {opacity: 1}
+	#hello {
+		font-family: 'Garamond', serif;
+		font-style: italic;
+		position: relative;
+		top: 0;
+	}
+
+	#queue {
+		font-family: 'Futura', sans-serif;
+		font-weight: 200;
+		position: relative;
+		top: 0;
+		-webkit-transition: all 1s ease;
+		-moz-transition: all 1s ease;
+		-o-transition: all 1s ease;
+		transition: all  1s ease;
+	}
 }

@@ -1,0 +1,31 @@
+@media screen and (min-width: 960px) {
+  /* line 10, ../../sass/pages/enqueue.scss */
+  .enqueue_page {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 105%;
+    padding-right: 5vw;
+  }
+
+  /* line 18, ../../sass/pages/enqueue.scss */
+  .enqueue_image {
+    width: 100%;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

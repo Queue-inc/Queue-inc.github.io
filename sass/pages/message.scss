@@ -6,247 +6,23 @@ $border_1 : 12px solid $color_1;
 $border_2 : 20px solid $color_1;
 $h1_fontsize : calc(3vw+3vh);
 
-@font-face {
-	font-family: 'Futura';
-	src: url(../fonts/Futura/Futura.ttf);
-}
-
-@font-face {
-	font-family: 'Futura-Oblique';
-	src: url(../fonts/Futura/Futura-Oblique.ttf) format('truetype');
-}
-
-@font-face {
-	font-family: 'Garamond';
-	src: url(../fonts/Garamond/AGaramondPro-Italic.otf) format('opentype');
-}
-
-@font-face {
-	font-family: 'Ryumin';
-	src: url(../fonts/Ryumin/A-OTF-RyuminPro-Medium.otf) format('opentype');
-}
-
-html {
-  height: 100%;
-	overflow: hidden
-}
-
-body {
-	height: 100%;
-  background-color: white;
-	margin: 0 0 0 0;
-
-	animation: fadeIn 2s ease 0s 1 normal;
-  -webkit-animation: fadeIn 2s ease 0s 1 normal;
-}
-
 @media screen and (min-width: 960px)  {
-	#sp_menu{
-		display: none;
-	}
-
-	#greeting {
-		font-size: 8vw;
-		color: $color_1;
-	  position: absolute;
-	  bottom: -4vw;
-	  right: 0;
-	  float: right;
-	  text-align: center;
-	}
-
-	#hello {
-	  font-family: 'Garamond', serif;
-	  font-style: italic;
-		position: relative;
-		top: 0;
-	}
-
-	#queue {
-	  font-family: 'Futura', sans-serif;
-	  font-weight: 200;
-		position: relative;
-		top: 0;
-	}
-
-	#top_logo_wrapper {
-		float: right;
-		position: relative;
-		margin: -20px 20px 20px 0;
-		width: 5vw;
-		z-index: 2;
-	}
-
-	#top_logo {
-		width: 100%;
-		z-index: 2;
-
-		&:hover{
-			z-index: 2;
-			-webkit-transform: scale(1.1);
-			-moz-transform: scale(1.1);
-			-o-transform: scale(1.1);
-			-ms-transform: scale(1.1);
-			transform: scale(1.1);
-
-			-webkit-transition: all 0.5s ease;
-			-moz-transition: all 0.5s ease;
-			-o-transition: all 0.5s ease;
-			transition: all  0.5s ease;
-		}
-	}
-
-	#square {
-		z-index: 0;
-	  border: $border_2;
-	  bottom: 0;
-	  left: 0;
-	  margin: auto;
-	  position: absolute;
-	  right: 0;
-	  top: 0;
-	  height: 90vh;
-	  width: 90vw;
-	  -webkit-transition: all 1s ease;
-	  -moz-transition: all 1s ease;
-	  -o-transition: all 1s ease;
-	  transition: all  1s ease;
-
-		.content_wrap {
-		  padding:40px 6vw 0 12vw;
-		  position: relative;
-		  font-family: 'Ryumin', serif;
-
-		  .content {
-		    position: absolute;
-				margin-left: 80px;
-				margin-right: 140px;
-				height: 90vh;
-				padding-bottom: calc(10vh + 50px);
-				width: auto;
-				overflow: hidden;
-
-		    h1{
-		      font-family: 'Futura-Oblique', sans-serif;
-					letter-spacing: 2px;
-		      font-size: 2vw;
-
-					#queue{
-						font-family: 'Futura', sans-serif;
-					}
-
-					#others{
-						font-family: 'Garamond', serif;
-						font-style: italic;
-					}
-		    }
-
-				hr {
-					margin: 0;
-					border: none;
-					height: 1.5px;
-				}
-
-				.about_title_underline{
-					width: 12.5vw;
-				}
-
-				.message_title_underline{
-					width: 19vw;
-				}
-
-				.teams_title_underline{
-					width: 15vw;
-				}
-
-				.works_title_underline{
-					width: 13vw;
-				}
-
-				.enqueue_title_underline {
-					width: 8vw;
-				}
-
-				.contact_title_underline{
-					width: 16vw;
-				}
-
-				h2{
-					font-family: 'Garamond', serif;
-					font-style: italic;
-					font-weight: 200;
-					font-size: 2vw;
-					text-align: center;
-					padding: 10vh 0;
-				}
-
-				h3{
-					font-family: 'Futura', 'Ryumin',  serif;
-					font-weight: 200;
-					font-size: 1.5vw;
-				}
-
-				.paragraph{
-					font-size: 16px !important;
-					line-height: 300%;
-					letter-spacing: 6px;
-					padding-top: 5vh;
-				}
-
-				#about_paragraph{
-					font-size: 16px !important;
-					line-height: 300%;
-					letter-spacing: 6px;
-					padding-top: 5vh;
-					height: 70vh;
-				}
-		  }
+		#message_page{
+			overflow-y: scroll;
+			overflow-x: hidden;
+			height: 100%;
+			width: 105%;
+			padding-right: 5vw;
 		}
 
-		#tmenu {
-			text-decoration: none;
-			font-family: 'Futura-Oblique', sans-serif;
-			font-size: 18px;
-			letter-spacing: 3px;
-			float: left;
-			position: fixed;
-			margin: 0 20px 0 -14vw;
-			animation: fadeIn_menu 5s ease 0s 1 normal;
-			-webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
-
-			tr .selected{
-				background-color: $color_1;
-				color: $color_2;
-			}
-
-			.amenu_wrap{
-				padding-left: 60px;
-			}
-
-			.amenu {
-				text-decoration: none;
-				color: $color_1;
-				display: block;
-				padding-left: 14vw;
-				padding-right: 1vw;
-				margin-top: 16px;;
-				text-align: left;
-				text-decoration: none;
-				&:hover {
-					text-decoration: none;
-					background-color: $color_1;
-					color: $color_2;
-				}
-			}
+		#message_paragraph{
+			overflow-y: scroll;
+			overflow-x: hidden;
+			font-size: 16px !important;
+			line-height: 300%;
+			letter-spacing: 6px;
+			padding-top: 5vh;
 		}
-	}
-
-	#square .title {
-	  font-size: 1em;
-	  &.select {
-	    font-size: 12em;
-	  }
-	}
 }
 
 @media screen and (max-width: 959px) {
@@ -260,7 +36,6 @@ body {
 	  background-color: white;
 		margin: 0 0 0 0;
 	}
-	
 	.content_wrap {
 		padding: 5vh 0 0 0;
 		font-family: 'Ryumin', serif;
@@ -569,7 +344,6 @@ body {
 
 	}
 }
-
 
 @keyframes fadeIn {
     0% {opacity: 0}

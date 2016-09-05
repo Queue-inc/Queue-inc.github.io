@@ -1,0 +1,14 @@
+@media screen and (min-width: 960px) {
+  /* line 4, ../../sass/pages/contact.scss */
+  #e-mail {
+    font-family: 'Ryumin', sans-serif;
+    font-size: 18px;
+    padding-top: 10vh;
+  }
+  /* line 5, ../../sass/pages/contact.scss */
+  #e-mail #email {
+    font-family: 'Garamond', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+  }
+}

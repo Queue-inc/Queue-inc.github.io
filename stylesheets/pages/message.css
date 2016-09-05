@@ -1,0 +1,385 @@
+@media screen and (min-width: 960px) {
+  /* line 10, ../../sass/pages/message.scss */
+  #message_page {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 105%;
+    padding-right: 5vw;
+  }
+
+  /* line 18, ../../sass/pages/message.scss */
+  #message_paragraph {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    font-size: 16px !important;
+    line-height: 300%;
+    letter-spacing: 6px;
+    padding-top: 5vh;
+  }
+}
+@media screen and (max-width: 959px) {
+  /* line 29, ../../sass/pages/message.scss */
+  html {
+    height: 100%;
+    overflow: hidden;
+  }
+
+  /* line 34, ../../sass/pages/message.scss */
+  body {
+    height: 100%;
+    background-color: white;
+    margin: 0 0 0 0;
+  }
+
+  /* line 39, ../../sass/pages/message.scss */
+  .content_wrap {
+    padding: 5vh 0 0 0;
+    font-family: 'Ryumin', serif;
+  }
+  /* line 42, ../../sass/pages/message.scss */
+  .content_wrap .content {
+    position: absolute;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 30px 5vw calc(10vh + 40px) 5vw;
+    height: 68vh;
+    font-size: 10px;
+  }
+  /* line 50, ../../sass/pages/message.scss */
+  .content_wrap .content h1 {
+    font-family: 'Futura-Oblique', sans-serif;
+    letter-spacing: 2px;
+    font-size: 7vw;
+  }
+  /* line 55, ../../sass/pages/message.scss */
+  .content_wrap .content h1 #queue {
+    font-family: 'Futura', sans-serif;
+  }
+  /* line 60, ../../sass/pages/message.scss */
+  .content_wrap .content h2 {
+    font-family: 'Garamond', serif;
+    font-style: italic;
+    font-weight: 200;
+    font-size: 6vw;
+    text-align: center;
+    padding: 10vh 0;
+  }
+  /* line 69, ../../sass/pages/message.scss */
+  .content_wrap .content h3 {
+    font-family: 'Futura', 'Ryumin',  serif;
+    font-weight: 200;
+    font-size: 5vw;
+  }
+  /* line 75, ../../sass/pages/message.scss */
+  .content_wrap .content .paragraph_warp {
+    height: 65vh;
+    padding-right: 5vw;
+  }
+  /* line 80, ../../sass/pages/message.scss */
+  .content_wrap .content p {
+    font-size: 18px !important;
+    line-height: 200%;
+    letter-spacing: 3px;
+  }
+
+  /* line 89, ../../sass/pages/message.scss */
+  #top_logo_wrapper {
+    display: none;
+    float: right;
+    top: 0;
+    position: relative;
+    width: 40px;
+    z-index: 2;
+  }
+
+  /* line 98, ../../sass/pages/message.scss */
+  #top_logo {
+    width: 100%;
+    z-index: 2;
+  }
+  /* line 102, ../../sass/pages/message.scss */
+  #top_logo:hover {
+    z-index: 2;
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all  0.5s ease;
+  }
+
+  /* line 117, ../../sass/pages/message.scss */
+  #navToggle {
+    position: absolute;
+    left: 20px;
+    top: -10px;
+    width: 30px;
+    height: 25px;
+    cursor: pointer;
+    animation: fadeIn_menu 3s ease 0s 1 normal;
+    -webkit-animation: fadeIn_menu 3s ease 0s 1 normal;
+  }
+  /* line 128, ../../sass/pages/message.scss */
+  #navToggle div {
+    position: relative;
+  }
+  /* line 131, ../../sass/pages/message.scss */
+  #navToggle span {
+    display: block;
+    position: absolute;
+    width: 100%;
+    border-bottom: solid 3px black;
+    -webkit-transition: .35s ease-in-out;
+    -moz-transition: .35s ease-in-out;
+    transition: .35s ease-in-out;
+  }
+  /* line 139, ../../sass/pages/message.scss */
+  #navToggle span:nth-child(1) {
+    top: 0;
+  }
+  /* line 142, ../../sass/pages/message.scss */
+  #navToggle span:nth-child(2) {
+    top: 11px;
+  }
+  /* line 145, ../../sass/pages/message.scss */
+  #navToggle span:nth-child(3) {
+    top: 22px;
+  }
+
+  /* line 151, ../../sass/pages/message.scss */
+  #sp_menu {
+    width: 100%;
+    z-index: 2;
+    position: fixed;
+    background: rgba(255, 255, 255, 0.7);
+    display: table;
+    font-family: 'Futura-Oblique', serif;
+  }
+  /* line 160, ../../sass/pages/message.scss */
+  #sp_menu ul {
+    padding: 0;
+    font-size: 20px;
+    line-height: 1;
+    text-align: center;
+    margin: 0 10px 10px 0;
+  }
+  /* line 166, ../../sass/pages/message.scss */
+  #sp_menu ul li {
+    margin: auto;
+    display: inline-block;
+  }
+  /* line 169, ../../sass/pages/message.scss */
+  #sp_menu ul li:hover {
+    background-color: black;
+    color: white;
+  }
+  /* line 173, ../../sass/pages/message.scss */
+  #sp_menu ul li::after {
+    content: ' |';
+  }
+  /* line 176, ../../sass/pages/message.scss */
+  #sp_menu ul li:last-child::after {
+    content: '';
+  }
+  /* line 179, ../../sass/pages/message.scss */
+  #sp_menu ul li a {
+    z-index: 2;
+    text-decoration: none;
+    color: inherit;
+  }
+  /* line 187, ../../sass/pages/message.scss */
+  #sp_menu nav {
+    text-align: right;
+    vertical-align: bottom;
+    position: absolute;
+    top: 40px !important;
+    background: white;
+    visibility: hidden;
+    opacity: 0;
+    width: 100%;
+    padding: 0 10px;
+    width: 80vw;
+    margin: 0 auto;
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    text-align: left;
+  }
+  /* line 204, ../../sass/pages/message.scss */
+  #sp_menu nav.selected {
+    opacity: 1;
+    visibility: visible;
+  }
+  /* line 210, ../../sass/pages/message.scss */
+  #sp_menu ul {
+    margin: auto;
+  }
+  /* line 212, ../../sass/pages/message.scss */
+  #sp_menu ul li {
+    display: block;
+    margin-top: 20px;
+  }
+  /* line 215, ../../sass/pages/message.scss */
+  #sp_menu ul li a {
+    display: block;
+    line-height: 200%;
+  }
+  /* line 219, ../../sass/pages/message.scss */
+  #sp_menu ul li::after {
+    content: '';
+  }
+  /* line 222, ../../sass/pages/message.scss */
+  #sp_menu ul li:last-child {
+    border-bottom: none;
+  }
+
+  /* line 229, ../../sass/pages/message.scss */
+  #navToggle {
+    display: block;
+  }
+
+  /* line 235, ../../sass/pages/message.scss */
+  .openNav #navToggle span:nth-child(1) {
+    top: 11px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  /* line 241, ../../sass/pages/message.scss */
+  .openNav #navToggle span:nth-child(2), .openNav #navToggle span:nth-child(3) {
+    top: 11px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  /* line 250, ../../sass/pages/message.scss */
+  hr {
+    margin: 0;
+    border: none;
+    height: 1.5px;
+  }
+
+  /* line 256, ../../sass/pages/message.scss */
+  .about_title_underline {
+    width: 40vw;
+  }
+
+  /* line 260, ../../sass/pages/message.scss */
+  .teams_title_underline {
+    width: 40vw;
+  }
+
+  /* line 264, ../../sass/pages/message.scss */
+  .works_title_underline {
+    width: 40vw;
+  }
+
+  /* line 268, ../../sass/pages/message.scss */
+  .enqueue_title_underline {
+    width: 40vw;
+  }
+
+  /* line 272, ../../sass/pages/message.scss */
+  .contact_title_underline {
+    width: 40vw;
+  }
+
+  /* line 276, ../../sass/pages/message.scss */
+  .enqueue_page {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+    width: 105%;
+    padding-right: 5vw;
+  }
+
+  /* line 285, ../../sass/pages/message.scss */
+  .enqueue_image {
+    width: 100%;
+  }
+
+  /* line 289, ../../sass/pages/message.scss */
+  #e-mail {
+    font-family: 'Ryumin', sans-serif;
+    font-size: 18px;
+    padding-top: 10vh;
+  }
+  /* line 290, ../../sass/pages/message.scss */
+  #e-mail #email {
+    font-family: 'Garamond', sans-serif;
+    font-style: italic;
+    font-size: 20px;
+  }
+
+  /* line 300, ../../sass/pages/message.scss */
+  #greeting {
+    font-size: 9.6vw;
+    position: absolute;
+    bottom: -5vw;
+    right: 0;
+    text-align: center;
+  }
+
+  /* line 308, ../../sass/pages/message.scss */
+  #hello {
+    font-family: 'Garamond', serif;
+    font-style: italic;
+    position: relative;
+    top: 0;
+  }
+
+  /* line 315, ../../sass/pages/message.scss */
+  #queue {
+    font-family: 'Futura', sans-serif;
+    font-weight: 200;
+    position: relative;
+    top: 0;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all  1s ease;
+  }
+
+  /* line 326, ../../sass/pages/message.scss */
+  #tmenu {
+    display: none;
+  }
+
+  /* line 330, ../../sass/pages/message.scss */
+  #square {
+    border: 12px solid black;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 85vh;
+    width: 90vw;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    transition: all  1s ease;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

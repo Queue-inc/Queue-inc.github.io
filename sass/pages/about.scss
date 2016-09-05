@@ -1,0 +1,17 @@
+@import "compass";
+
+$color_1: black;
+$color_2: white;
+$border_1 : 12px solid $color_1;
+$border_2 : 20px solid $color_1;
+$h1_fontsize : calc(3vw+3vh);
+
+@media screen and (min-width: 960px)  {
+	#about_paragraph{
+		font-size: 16px !important;
+		line-height: 300%;
+		letter-spacing: 6px;
+		padding-top: 5vh;
+		height: 70vh;
+	}
+}
