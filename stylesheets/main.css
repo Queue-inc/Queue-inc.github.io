@@ -112,8 +112,6 @@ body {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all  1s ease;
-    animation: fadeIn_square 4s ease 0s 1 normal;
-    -webkit-animation: fadeIn_square 4s ease 0s 1 normal;
   }
   /* line 121, ../sass/main.scss */
   #square .content_wrap {
@@ -195,14 +193,14 @@ body {
   /* line 196, ../sass/main.scss */
   #square .content_wrap .content .paragraph {
     font-size: 16px !important;
-    line-height: 250%;
+    line-height: 300%;
     letter-spacing: 6px;
     padding-top: 5vh;
   }
   /* line 203, ../sass/main.scss */
   #square .content_wrap .content #about_paragraph {
-    font-size: 18px !important;
-    line-height: 250%;
+    font-size: 16px !important;
+    line-height: 300%;
     letter-spacing: 6px;
     padding-top: 5vh;
     height: 70vh;
@@ -261,24 +259,25 @@ body {
   #square .content_wrap .content .teams_paragraph {
     font-family: 'Ryumin', serif;
     font-size: 16px !important;
-    line-height: 200%;
+    line-height: 300%;
+    letter-spacing: 6px;
     padding-top: 5vh;
   }
-  /* line 270, ../sass/main.scss */
+  /* line 271, ../sass/main.scss */
   #square .content_wrap .content .teams_detail_paragraph {
     font-family: 'Ryumin', serif;
     font-size: 14px !important;
     line-height: 200%;
   }
-  /* line 276, ../sass/main.scss */
+  /* line 277, ../sass/main.scss */
   #square .content_wrap .content .teams_section {
     padding-top: 2vh;
   }
-  /* line 280, ../sass/main.scss */
+  /* line 281, ../sass/main.scss */
   #square .content_wrap .content .teams_detail {
     padding-top: 5vh;
   }
-  /* line 284, ../sass/main.scss */
+  /* line 285, ../sass/main.scss */
   #square .content_wrap .content .enqueue_page {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -286,23 +285,23 @@ body {
     width: 105%;
     padding-right: 5vw;
   }
-  /* line 293, ../sass/main.scss */
+  /* line 294, ../sass/main.scss */
   #square .content_wrap .content .enqueue_image {
     width: 100%;
   }
-  /* line 297, ../sass/main.scss */
+  /* line 298, ../sass/main.scss */
   #square .content_wrap .content #e-mail {
     font-family: 'Ryumin', sans-serif;
     font-size: 18px;
     padding-top: 10vh;
   }
-  /* line 298, ../sass/main.scss */
+  /* line 299, ../sass/main.scss */
   #square .content_wrap .content #e-mail #email {
     font-family: 'Garamond', sans-serif;
     font-style: italic;
     font-size: 20px;
   }
-  /* line 310, ../sass/main.scss */
+  /* line 311, ../sass/main.scss */
   #square #tmenu {
     text-decoration: none;
     font-family: 'Futura-Oblique', sans-serif;
@@ -314,16 +313,16 @@ body {
     animation: fadeIn_menu 5s ease 0s 1 normal;
     -webkit-animation: fadeIn_menu 5s ease 0s 1 normal;
   }
-  /* line 321, ../sass/main.scss */
+  /* line 322, ../sass/main.scss */
   #square #tmenu tr .selected {
     background-color: black;
     color: white;
   }
-  /* line 326, ../sass/main.scss */
+  /* line 327, ../sass/main.scss */
   #square #tmenu .amenu_wrap {
     padding-left: 60px;
   }
-  /* line 330, ../sass/main.scss */
+  /* line 331, ../sass/main.scss */
   #square #tmenu .amenu {
     text-decoration: none;
     color: black;
@@ -334,86 +333,42 @@ body {
     text-align: left;
     text-decoration: none;
   }
-  /* line 339, ../sass/main.scss */
+  /* line 340, ../sass/main.scss */
   #square #tmenu .amenu:hover {
     text-decoration: none;
     background-color: black;
     color: white;
   }
 
-  @keyframes fadeIn_square {
-    0% {
-      background-color: black;
-      height: calc(5vw + 5vh);
-      width: calc(5vw + 5vh);
-      opacity: 0;
-      transform: rotate(-720deg);
-    }
-    50% {
-      background-color: black;
-      height: calc(5vw + 5vh);
-      width: calc(5vw + 5vh);
-      opacity: 1;
-      transform: rotate(0deg);
-    }
-    75% {
-      background-color: black;
-      height: calc(4vw + 4vh);
-      width: calc(4vw + 4vh);
-      opacity: 1;
-      transform: rotate(0deg);
-    }
-    100% {
-      opacity: 1;
-      transform: rotate(0deg);
-      border: 20px solid black;
-      height: 90vh;
-      width: 90vw;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0);
-    }
-  }
-  /* line 383, ../sass/main.scss */
+  /* line 384, ../sass/main.scss */
   #square .title {
     font-size: 1em;
   }
-  /* line 385, ../sass/main.scss */
+  /* line 386, ../sass/main.scss */
   #square .title.select {
     font-size: 12em;
   }
-
-  @keyframes fadeIn_menu {
-    0% {
-      opacity: 0;
-    }
-    80% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
 }
 @media screen and (max-width: 959px) {
-  /* line 407, ../sass/main.scss */
+  /* line 408, ../sass/main.scss */
   html {
     height: 100%;
     overflow: hidden;
   }
 
-  /* line 412, ../sass/main.scss */
+  /* line 413, ../sass/main.scss */
   body {
     height: 100%;
     background-color: white;
     margin: 0 0 0 0;
   }
 
-  /* line 417, ../sass/main.scss */
+  /* line 418, ../sass/main.scss */
   .content_wrap {
     padding: 5vh 0 0 0;
     font-family: 'Ryumin', serif;
   }
-  /* line 421, ../sass/main.scss */
+  /* line 422, ../sass/main.scss */
   .content_wrap .content {
     position: absolute;
     display: none;
@@ -423,17 +378,17 @@ body {
     height: 68vh;
     font-size: 10px;
   }
-  /* line 430, ../sass/main.scss */
+  /* line 431, ../sass/main.scss */
   .content_wrap .content h1 {
     font-family: 'Futura-Oblique', sans-serif;
     letter-spacing: 2px;
     font-size: 7vw;
   }
-  /* line 435, ../sass/main.scss */
+  /* line 436, ../sass/main.scss */
   .content_wrap .content h1 #queue {
     font-family: 'Futura', sans-serif;
   }
-  /* line 440, ../sass/main.scss */
+  /* line 441, ../sass/main.scss */
   .content_wrap .content h2 {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -442,25 +397,25 @@ body {
     text-align: center;
     padding: 10vh 0;
   }
-  /* line 449, ../sass/main.scss */
+  /* line 450, ../sass/main.scss */
   .content_wrap .content h3 {
     font-family: 'Futura', 'Ryumin',  serif;
     font-weight: 200;
     font-size: 5vw;
   }
-  /* line 455, ../sass/main.scss */
+  /* line 456, ../sass/main.scss */
   .content_wrap .content .paragraph_warp {
     height: 65vh;
     padding-right: 5vw;
   }
-  /* line 460, ../sass/main.scss */
+  /* line 461, ../sass/main.scss */
   .content_wrap .content p {
     font-size: 18px !important;
     line-height: 200%;
     letter-spacing: 3px;
   }
 
-  /* line 469, ../sass/main.scss */
+  /* line 470, ../sass/main.scss */
   #top_logo_wrapper {
     display: none;
     float: right;
@@ -470,12 +425,12 @@ body {
     z-index: 2;
   }
 
-  /* line 478, ../sass/main.scss */
+  /* line 479, ../sass/main.scss */
   #top_logo {
     width: 100%;
     z-index: 2;
   }
-  /* line 482, ../sass/main.scss */
+  /* line 483, ../sass/main.scss */
   #top_logo:hover {
     z-index: 2;
     -webkit-transform: scale(1.1);
@@ -489,7 +444,7 @@ body {
     transition: all  0.5s ease;
   }
 
-  /* line 497, ../sass/main.scss */
+  /* line 498, ../sass/main.scss */
   #navToggle {
     position: absolute;
     left: 20px;
@@ -500,11 +455,11 @@ body {
     animation: fadeIn_menu 3s ease 0s 1 normal;
     -webkit-animation: fadeIn_menu 3s ease 0s 1 normal;
   }
-  /* line 508, ../sass/main.scss */
+  /* line 509, ../sass/main.scss */
   #navToggle div {
     position: relative;
   }
-  /* line 511, ../sass/main.scss */
+  /* line 512, ../sass/main.scss */
   #navToggle span {
     display: block;
     position: absolute;
@@ -514,20 +469,20 @@ body {
     -moz-transition: .35s ease-in-out;
     transition: .35s ease-in-out;
   }
-  /* line 519, ../sass/main.scss */
+  /* line 520, ../sass/main.scss */
   #navToggle span:nth-child(1) {
     top: 0;
   }
-  /* line 522, ../sass/main.scss */
+  /* line 523, ../sass/main.scss */
   #navToggle span:nth-child(2) {
     top: 11px;
   }
-  /* line 525, ../sass/main.scss */
+  /* line 526, ../sass/main.scss */
   #navToggle span:nth-child(3) {
     top: 22px;
   }
 
-  /* line 531, ../sass/main.scss */
+  /* line 532, ../sass/main.scss */
   #sp_menu {
     width: 100%;
     z-index: 2;
@@ -536,7 +491,7 @@ body {
     display: table;
     font-family: 'Futura-Oblique', serif;
   }
-  /* line 540, ../sass/main.scss */
+  /* line 541, ../sass/main.scss */
   #sp_menu ul {
     padding: 0;
     font-size: 20px;
@@ -544,31 +499,31 @@ body {
     text-align: center;
     margin: 0 10px 10px 0;
   }
-  /* line 546, ../sass/main.scss */
+  /* line 547, ../sass/main.scss */
   #sp_menu ul li {
     margin: auto;
     display: inline-block;
   }
-  /* line 549, ../sass/main.scss */
+  /* line 550, ../sass/main.scss */
   #sp_menu ul li:hover {
     background-color: black;
     color: white;
   }
-  /* line 553, ../sass/main.scss */
+  /* line 554, ../sass/main.scss */
   #sp_menu ul li::after {
     content: ' |';
   }
-  /* line 556, ../sass/main.scss */
+  /* line 557, ../sass/main.scss */
   #sp_menu ul li:last-child::after {
     content: '';
   }
-  /* line 559, ../sass/main.scss */
+  /* line 560, ../sass/main.scss */
   #sp_menu ul li a {
     z-index: 2;
     text-decoration: none;
     color: inherit;
   }
-  /* line 567, ../sass/main.scss */
+  /* line 568, ../sass/main.scss */
   #sp_menu nav {
     text-align: right;
     vertical-align: bottom;
@@ -586,47 +541,47 @@ body {
     transition: .5s ease-in-out;
     text-align: left;
   }
-  /* line 584, ../sass/main.scss */
+  /* line 585, ../sass/main.scss */
   #sp_menu nav.selected {
     opacity: 1;
     visibility: visible;
   }
-  /* line 590, ../sass/main.scss */
+  /* line 591, ../sass/main.scss */
   #sp_menu ul {
     margin: auto;
   }
-  /* line 592, ../sass/main.scss */
+  /* line 593, ../sass/main.scss */
   #sp_menu ul li {
     display: block;
     margin-top: 20px;
   }
-  /* line 595, ../sass/main.scss */
+  /* line 596, ../sass/main.scss */
   #sp_menu ul li a {
     display: block;
     line-height: 200%;
   }
-  /* line 599, ../sass/main.scss */
+  /* line 600, ../sass/main.scss */
   #sp_menu ul li::after {
     content: '';
   }
-  /* line 602, ../sass/main.scss */
+  /* line 603, ../sass/main.scss */
   #sp_menu ul li:last-child {
     border-bottom: none;
   }
 
-  /* line 609, ../sass/main.scss */
+  /* line 610, ../sass/main.scss */
   #navToggle {
     display: block;
   }
 
-  /* line 615, ../sass/main.scss */
+  /* line 616, ../sass/main.scss */
   .openNav #navToggle span:nth-child(1) {
     top: 11px;
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
     transform: rotate(-45deg);
   }
-  /* line 621, ../sass/main.scss */
+  /* line 622, ../sass/main.scss */
   .openNav #navToggle span:nth-child(2), .openNav #navToggle span:nth-child(3) {
     top: 11px;
     -webkit-transform: rotate(45deg);
@@ -634,45 +589,45 @@ body {
     transform: rotate(45deg);
   }
 
-  /* line 630, ../sass/main.scss */
+  /* line 631, ../sass/main.scss */
   hr {
     margin: 0;
     border: none;
     height: 1.5px;
   }
 
-  /* line 636, ../sass/main.scss */
+  /* line 637, ../sass/main.scss */
   .about_title_underline {
     width: 40vw;
   }
 
-  /* line 640, ../sass/main.scss */
+  /* line 641, ../sass/main.scss */
   .teams_title_underline {
     width: 40vw;
   }
 
-  /* line 644, ../sass/main.scss */
+  /* line 645, ../sass/main.scss */
   .works_title_underline {
     width: 40vw;
   }
 
-  /* line 648, ../sass/main.scss */
+  /* line 649, ../sass/main.scss */
   .enqueue_title_underline {
     width: 40vw;
   }
 
-  /* line 652, ../sass/main.scss */
+  /* line 653, ../sass/main.scss */
   .contact_title_underline {
     width: 40vw;
   }
 
-  /* line 656, ../sass/main.scss */
+  /* line 657, ../sass/main.scss */
   .teams_page {
     margin: auto;
     text-align: left;
   }
 
-  /* line 661, ../sass/main.scss */
+  /* line 662, ../sass/main.scss */
   #teams_logo {
     width: 80%;
     margin: auto;
@@ -682,7 +637,7 @@ body {
     -ms-transition: -ms-transform 0.5s linear;
     transition: transform 0.5s linear;
   }
-  /* line 671, ../sass/main.scss */
+  /* line 672, ../sass/main.scss */
   #teams_logo:hover {
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
@@ -695,7 +650,7 @@ body {
     transition: all  0.5s ease;
   }
 
-  /* line 685, ../sass/main.scss */
+  /* line 686, ../sass/main.scss */
   .enqueue_page {
     overflow-y: scroll;
     overflow-x: hidden;
@@ -704,25 +659,25 @@ body {
     padding-right: 5vw;
   }
 
-  /* line 694, ../sass/main.scss */
+  /* line 695, ../sass/main.scss */
   .enqueue_image {
     width: 100%;
   }
 
-  /* line 698, ../sass/main.scss */
+  /* line 699, ../sass/main.scss */
   #e-mail {
     font-family: 'Ryumin', sans-serif;
     font-size: 18px;
     padding-top: 10vh;
   }
-  /* line 699, ../sass/main.scss */
+  /* line 700, ../sass/main.scss */
   #e-mail #email {
     font-family: 'Garamond', sans-serif;
     font-style: italic;
     font-size: 20px;
   }
 
-  /* line 709, ../sass/main.scss */
+  /* line 710, ../sass/main.scss */
   #greeting {
     font-size: 9.6vw;
     position: absolute;
@@ -731,7 +686,7 @@ body {
     text-align: center;
   }
 
-  /* line 717, ../sass/main.scss */
+  /* line 718, ../sass/main.scss */
   #hello {
     font-family: 'Garamond', serif;
     font-style: italic;
@@ -739,7 +694,7 @@ body {
     top: 0;
   }
 
-  /* line 724, ../sass/main.scss */
+  /* line 725, ../sass/main.scss */
   #queue {
     font-family: 'Futura', sans-serif;
     font-weight: 200;
@@ -751,12 +706,12 @@ body {
     transition: all  1s ease;
   }
 
-  /* line 735, ../sass/main.scss */
+  /* line 736, ../sass/main.scss */
   #tmenu {
     display: none;
   }
 
-  /* line 739, ../sass/main.scss */
+  /* line 740, ../sass/main.scss */
   #square {
     border: 12px solid black;
     bottom: 0;
@@ -771,42 +726,5 @@ body {
     -moz-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all  1s ease;
-    animation: fadeIn_square 2s ease 0s 1 normal;
-    -webkit-animation: fadeIn_square 2s ease 0s 1 normal;
-  }
-
-  @keyframes fadeIn_square {
-    0% {
-      background-color: black;
-      height: calc(5vw + 5vh);
-      width: calc(5vw + 5vh);
-      opacity: 0;
-    }
-    50% {
-      background-color: black;
-      height: calc(4vw + 4vh);
-      width: calc(4vw + 4vh);
-      opacity: 1;
-      transform: rotate(0deg);
-    }
-    100% {
-      opacity: 1;
-      border: 12px solid black;
-      height: 90vh;
-      width: 90vw;
-      text-align: center;
-      background-color: rgba(255, 255, 255, 0);
-    }
-  }
-  @keyframes fadeIn_menu {
-    0% {
-      opacity: 0;
-    }
-    70% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
   }
 }
