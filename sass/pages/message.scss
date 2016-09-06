@@ -7,7 +7,7 @@ $border_2 : 20px solid $color_1;
 $h1_fontsize : calc(3vw+3vh);
 
 @media screen and (min-width: 960px)  {
-		#message_page{
+		.message_page{
 			overflow-y: scroll;
 			overflow-x: hidden;
 			height: 100%;
@@ -15,9 +15,7 @@ $h1_fontsize : calc(3vw+3vh);
 			padding-right: 5vw;
 		}
 
-		#message_paragraph{
-			overflow-y: scroll;
-			overflow-x: hidden;
+		.message_paragraph{
 			font-size: 16px !important;
 			line-height: 300%;
 			letter-spacing: 6px;
